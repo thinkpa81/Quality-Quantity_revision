@@ -1,0 +1,15 @@
+﻿model,iterations,limit
+forward_16_logistic,845,2000
+forward_13_logistic,814,2000
+shuffled_0_logistic,880,2000
+balanced_logistic,1421,2000
+rolling_14_logistic,857,2000
+shuffled_3_logistic,885,2000
+logistic,953,2000
+rolling_17_logistic,882,2000
+shuffled_1_logistic,863,2000
+shuffled_2_logistic,888,2000
+forward_7_logistic,617,2000
+tuned_logistic_2,2072,10000
+tuned_logistic_0,578,2000
+forward_10_logistic,712,2000

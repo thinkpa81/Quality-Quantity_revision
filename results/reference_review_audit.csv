@@ -1,0 +1,10 @@
+﻿source,claim,status,scope,primary_url,review_date
+TRIPOD+AI,"Outcome and risk set: 5a-b, 6b, 8a, 11",Verified,"Official supplementary checklist, printed checklist pages 1-2 (PDF pages 15-16)",https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+TRIPOD+AI,"Availability and OOF: 9b, 12a-c",Verified,Official checklist; mapping is an adaptation rather than an endorsement,https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+TRIPOD+AI,"Fit provenance: 7, 12b-c, 12g, 13",Verified,"Official checklist: data preparation, fitting, model output and imbalance",https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+TRIPOD+AI,"Calibration and decisions: 12e-f, 15",Verified,"Official checklist: evaluation, updating and clinical utility",https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+TRIPOD+AI,"Dependence and transport: 12d-e, 14, 16, 23a",Verified,Official checklist; 23a concerns interpretation of performance,https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+TRIPOD+AI,Reproduction: 18e-f,Verified,Official checklist: data and code availability,https://www.tripod-statement.org/wp-content/uploads/2024/04/TRIPODAI-Supplement.pdf,2026-10-26
+Kim et al. 2023,80/20 data partition,Verified,Primary full text; split proportion alone does not establish temporal validity,https://pmc.ncbi.nlm.nih.gov/articles/PMC10252429/,2026-10-26
+Al-Ali et al. 2026,80/20 partition and four datasets,Verified,Publisher article and indexed primary-text passage; no blanket random-split assertion inferred,https://www.nature.com/articles/s41598-026-36424-2,2026-10-26
+Talebi et al. 2025,58-study review,Verified,Publisher abstract and full text,https://onlinelibrary.wiley.com/doi/10.1002/eng2.70298,2026-10-26

@@ -1,0 +1,13 @@
+{
+  "panel_rows": 417823,
+  "panel_people": 37442,
+  "risk_all_waves": 160102,
+  "risk_eligible": 150546,
+  "administrative_end_rows": 9556,
+  "analysis_rows": 139566,
+  "analysis_people": 19339,
+  "events": 15171,
+  "unobserved_eligible": 10980,
+  "raw_files_read": 83,
+  "unknown_followup_rows": 0
+}

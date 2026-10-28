@@ -1,0 +1,224 @@
+{
+  "version": "2026-10-26",
+  "seed": 20261026,
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "python-calamine": "0.9.0",
+    "openpyxl": "3.1.5",
+    "xlrd": "2.0.1",
+    "pypdf": "6.10.0",
+    "python-docx": "1.2.0",
+    "Jinja2": "3.1.6"
+  },
+  "target": "next-wave observed exit from wage employment",
+  "outcome_priority": [
+    "questionnaire type p__0201",
+    "detailed employed status p__0314",
+    "employed-questionnaire fallback p__0211"
+  ],
+  "unknown_followup": "unlabelled; exclude from supervised sample",
+  "baseline_partitions": {
+    "training": [
+      1,
+      20
+    ],
+    "validation": [
+      21,
+      23
+    ],
+    "test": [
+      24,
+      26
+    ]
+  },
+  "year_offset": 1997,
+  "horizon_waves": 1,
+  "forward_oof_folds": [
+    {
+      "train_start": "1",
+      "train_end": "7",
+      "latest_training_outcome_wave": "8",
+      "oof_start": "9",
+      "oof_end": "11",
+      "train_n": "24806",
+      "oof_n": "11846",
+      "feature_n": "136"
+    },
+    {
+      "train_start": "1",
+      "train_end": "10",
+      "latest_training_outcome_wave": "11",
+      "oof_start": "12",
+      "oof_end": "14",
+      "train_n": "36500",
+      "oof_n": "14434",
+      "feature_n": "138"
+    },
+    {
+      "train_start": "1",
+      "train_end": "13",
+      "latest_training_outcome_wave": "14",
+      "oof_start": "15",
+      "oof_end": "17",
+      "train_n": "49879",
+      "oof_n": "15064",
+      "feature_n": "138"
+    },
+    {
+      "train_start": "1",
+      "train_end": "16",
+      "latest_training_outcome_wave": "17",
+      "oof_start": "18",
+      "oof_end": "20",
+      "train_n": "64860",
+      "oof_n": "16621",
+      "feature_n": "138"
+    }
+  ],
+  "primary_models": [
+    "logistic",
+    "random_forest",
+    "xgboost",
+    "catboost",
+    "forward_stack"
+  ],
+  "base_probability_source": "one full-training refit per model",
+  "primary_class_weights": null,
+  "primary_survey_weights": null,
+  "feature_coverage_minimum_training_nonmissing": 20,
+  "calibration_fit": "validation only; raw, logistic recalibration on clipped log odds, isotonic",
+  "threshold_fit": "validation only; maximise F1; utility scenarios optimise validation utility",
+  "pr_auc_definition": "average precision",
+  "ece_bins": "10 equal-width",
+  "recall20_ties": "fractional allocation at cutoff",
+  "bootstrap": {
+    "unit": "person",
+    "paired": true,
+    "primary_replicates": 1000,
+    "per_wave_replicates": 500,
+    "confidence_interval": "2.5th and 97.5th percentile",
+    "fixed_during_resampling": [
+      "model",
+      "calibration map",
+      "threshold"
+    ],
+    "workers": 3
+  },
+  "utility_scenarios": {
+    "low": [
+      10,
+      1,
+      5
+    ],
+    "medium": [
+      20,
+      5,
+      10
+    ],
+    "high": [
+      50,
+      20,
+      15
+    ]
+  },
+  "utility_order": [
+    "benefit_TP",
+    "cost_FP",
+    "cost_FN"
+  ],
+  "utility_formula": "b*TP-c_FP*FP-c_FN*FN",
+  "decision_curve_threshold_range": [
+    0.01,
+    0.5
+  ],
+  "shap": {
+    "model": "actual primary 300-iteration CatBoost",
+    "samples": 3,
+    "rows_per_sample": 1000,
+    "disjoint": true,
+    "scale": "raw log odds"
+  },
+  "source_files": {
+    "listed": 84,
+    "fully_read": 83,
+    "required_modelling_inputs": 54,
+    "required_inputs_read": 54,
+    "unread_unused": "eklips27w.xlsx",
+    "reason": "Unused source outside analysis dependency; not audited"
+  },
+  "scope": [
+    "retrospective completed-wave benchmark",
+    "conditional on observed follow-up and fitted models",
+    "revision-driven test reuse; not preregistered",
+    "no full survey-design uncertainty",
+    "no intervention effect estimation"
+  ],
+  "summary": {
+    "panel_rows": 417823,
+    "panel_people": 37442,
+    "risk_all_waves": 160102,
+    "risk_eligible": 150546,
+    "administrative_end_rows": 9556,
+    "analysis_rows": 139566,
+    "analysis_people": 19339,
+    "events": 15171,
+    "unobserved_eligible": 10980,
+    "raw_files_read": 83,
+    "unknown_followup_rows": 0
+  },
+  "temporal_boundary_scopes": {
+    "primary": "completed-wave batch; preceding-wave outcomes may coincide with first score covariate wave",
+    "forward_oof": "strict latest training outcome < first OOF score wave",
+    "strict_boundary_sensitivity": "train1\u201319; calibrate21\u201322; test24\u201326; full-wave gaps",
+    "public_release_calendar": "not simulated"
+  },
+  "constant_period_flags": {
+    "definition_year": "baseline t",
+    "features": [
+      "post_2018_workweek_reform",
+      "covid_period",
+      "post_covid_period"
+    ],
+    "training_value": 0,
+    "coverage_eligibility": "distinct from variance",
+    "sensitivity": "same-seed no-year/no-calendar/no-constant flags"
+  },
+  "seed_repetitions": {
+    "seeds": [
+      20261026,
+      20261027,
+      20261028,
+      20261029,
+      20261030,
+      20261031,
+      20261032,
+      20261033,
+      20261034,
+      20261035
+    ],
+    "stochastic_refits": "full training plus four forward OOF blocks for RF/XGB/CatBoost",
+    "deterministic_logistic": "predictions reused",
+    "scope": "algorithmic randomness conditional on data, not full redevelopment uncertainty",
+    "model_threads": 3,
+    "workers": 2
+  },
+  "additional_bootstrap": {
+    "origins": 500,
+    "drift": 500,
+    "logit_stack": 500,
+    "household_connected_components": 1000,
+    "matched_below65": 500
+  },
+  "drift": "age x cohort common support; pooled fixed reference; exact symmetric composition/rate/outside-support decomposition",
+  "logit_stack": "C=1; logit clip1e-6; same OOF rows; exploratory",
+  "release_date": "2026-10-28",
+  "verification_scope": "Fresh raw reconstruction and primary full-training/forward-OOF refits; other experiments checked against retained outputs, not all refitted in this verification"
+}

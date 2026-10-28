@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "released aggregates",
+      "status": "PASS"
+    },
+    {
+      "case": "corrupt primary_cluster_confidence_intervals.csv:lower",
+      "status": "rejected"
+    },
+    {
+      "case": "corrupt paired_cluster_model_contrasts.csv:lower",
+      "status": "rejected"
+    },
+    {
+      "case": "corrupt seed_contrasts.csv:mean_A_minus_B",
+      "status": "rejected"
+    },
+    {
+      "case": "corrupt utility_scenarios.csv:utility_units",
+      "status": "rejected"
+    },
+    {
+      "case": "corrupt drift_decomposition.csv:estimate",
+      "status": "rejected"
+    },
+    {
+      "case": "duplicate bootstrap model/replicate key",
+      "status": "rejected"
+    },
+    {
+      "case": "missing paired contrast row",
+      "status": "rejected"
+    },
+    {
+      "case": "reverse bootstrap and seed source row order",
+      "status": "PASS"
+    }
+  ]
+}

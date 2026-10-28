@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-28",
+  "changes": [
+    "Derive audited source set from config/raw_file_audit.csv",
+    "Verify names, exact bytes and SHA256 for every declared input",
+    "Reject duplicate names, path traversal, missing required54corefiles and unexpected audit files",
+    "Include all declared hashes in cache signature"
+  ],
+  "tests": "83-file and84-file synthetic manifests accepted; nine malformed/missing/mismatched cases rejected; syntax checked",
+  "estimator_changes": false
+}

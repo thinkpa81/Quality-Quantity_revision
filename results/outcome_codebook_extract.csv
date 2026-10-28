@@ -1,0 +1,50 @@
+sheet,excel_row,variable,label,value_label
+Individual,64,sample98,Original sample (98 sample) Household indicator,(1) 98 sample original household
+Individual,65,sample98,Original sample (98 sample) Household indicator,(2) Branch household from 98 original sample
+Individual,66,sample98,Original sample (98 sample) Household indicator,(3) Not interview target
+Individual,67,sample09,Original sample (09 consolidated sample) Household indicator,(1) Original 09 consolidated sample household
+Individual,68,sample09,Original sample (09 consolidated sample) Household indicator,(2) Branch household from consolidated sample household
+Individual,69,sample09,Original sample (09 consolidated sample) Household indicator,(3) Not interview target
+Individual,70,sample18,Original sample (18 consolidated sample) Household indicator,(1) Original 18 consolidated sample household
+Individual,71,sample18,Original sample (18 consolidated sample) Household indicator,(2) Branch household from consolidated sample household
+Individual,72,sample18,Original sample (18 consolidated sample) Household indicator,(3) Not interview target
+Individual,166,p__0201,(All Respondents) Questionnaire type,(1) For employed persons
+Individual,167,p__0201,(All Respondents) Questionnaire type,(2) For Non-employed persons
+Individual,177,p__0203,(All Respondents) Main activity during last week,(1) Worked
+Individual,178,p__0203,(All Respondents) Main activity during last week,(2) Temporarily away from work
+Individual,179,p__0203,(All Respondents) Main activity during last week,(3) Searched for a job
+Individual,180,p__0203,(All Respondents) Main activity during last week,(4) Looked after family or home/child-caring
+Individual,181,p__0203,(All Respondents) Main activity during last week,(5) Childcare
+Individual,182,p__0203,(All Respondents) Main activity during last week,(6) Attended school
+Individual,183,p__0203,(All Respondents) Main activity during last week,(7) Attended preparatory academic institutes to enter a school of higher grade
+Individual,184,p__0203,(All Respondents) Main activity during last week,(8) Attended Non-academic institutes or vocational training institutes for finding a job
+Individual,185,p__0203,(All Respondents) Main activity during last week,(9) Old age
+Individual,186,p__0203,(All Respondents) Main activity during last week,(10) Mental/physical illness
+Individual,187,p__0203,(All Respondents) Main activity during last week,(11) Preparation to find a job(Not attending institutes)
+Individual,188,p__0203,(All Respondents) Main activity during last week,(12) Preparation to enter a school of higher grade(Not attending academic institutes or schooling)
+Individual,189,p__0203,(All Respondents) Main activity during last week,(13) Waited for military service
+Individual,190,p__0203,(All Respondents) Main activity during last week,(14) Waiting to be Stationed at work
+Individual,191,p__0203,(All Respondents) Main activity during last week,(15) Preparation for marriage
+Individual,192,p__0203,(All Respondents) Main activity during last week,(16) Did not work in the past week but found a job during the period of the survey.
+Individual,193,p__0203,(All Respondents) Main activity during last week,(17) Rest
+Individual,194,p__0203,(All Respondents) Main activity during last week,(18) Other
+Individual,195,p__0203,(All Respondents) Main activity during last week,(19) Quit job
+Individual,196,p__0203,(All Respondents) Main activity during last week,"(20) Worked during the past week, but quit during the week of the interview"
+Individual,197,p__0204,(All Respondents) Engaged in paid work or not during the last week,(1) Worked
+Individual,198,p__0204,(All Respondents) Engaged in paid work or not during the last week,(2) Did Not work
+Individual,199,p__0205,(All Respondents) Had a job or not last week,(1) Did Not have a job
+Individual,200,p__0205,(All Respondents) Had a job or not last week,(2) Had a job
+Individual,209,p__0211,(All Respondents) Employment type,"(1) In paid employment: employed by Others or a company, receiving wages or salaries "
+Individual,210,p__0211,(All Respondents) Employment type,(2) Self-employed: own and manage my business with or without hired workers 
+Individual,211,p__0211,(All Respondents) Employment type,(3) Working for family or relatives and Not paid
+Individual,244,p__0314,(Main Job) Work status-current(or the last),(1) Regular work
+Individual,245,p__0314,(Main Job) Work status-current(or the last),(2) Temporary work
+Individual,246,p__0314,(Main Job) Work status-current(or the last),(3) Daily work
+Individual,247,p__0314,(Main Job) Work status-current(or the last),(4) Employer/self employed
+Individual,248,p__0314,(Main Job) Work status-current(or the last),(5) Non-paid family worker 
+Individual,869,p__2801,(Non-Working Persons) Searched for job/actively sought employment during the past 7 days,(1) Yes
+Individual,870,p__2801,(Non-Working Persons) Searched for job/actively sought employment during the past 7 days,(2) No
+Individual,871,p__2802,(Non-Working Persons) Searched for job/actively sought employment during the past 30 days,(1) Yes
+Individual,872,p__2802,(Non-Working Persons) Searched for job/actively sought employment during the past 30 days,(2) No
+Individual,875,p__2804,(Non-Working Persons) Desired job/work during the past 7 days,(1) Yes
+Individual,876,p__2804,(Non-Working Persons) Desired job/work during the past 7 days,(2) No

@@ -1,0 +1,12 @@
+{
+  "people": 11187,
+  "connected_components": 7768,
+  "maximum_people_per_component": 6,
+  "maximum_rows_per_component": 16,
+  "median_people": 1.0,
+  "singleton_person_components": 4974,
+  "rows_missing_household": 0,
+  "resamples": 1000,
+  "construction": "Union of people co-resident in a positive household identifier within any same test wave; all rows of each person retained in one component",
+  "scope": "Dependence sensitivity, not full sampling-design or population inference"
+}

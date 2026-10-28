@@ -1,0 +1,27 @@
+{
+  "verification_date": "2026-10-28",
+  "source_files_inventoried": 84,
+  "source_files_content_audited": 83,
+  "required_model_inputs_audited": 54,
+  "unread_file": "eklips27w.xlsx",
+  "unread_reason": "Google Drive content retrieval failed in four attempts; final request returned400INVALID_ARGUMENT. Metadata only; unused for predictors and outcomes.",
+  "raw_source_identity": "All83downloaded sources match declaredSHA256 andbytecounts",
+  "worksheet_coverage": "All74XLSXinputs have one worksheet; both XLS codebooks read acrossallworksheets; sevenPDFsreadacrossallpages",
+  "source_reconstruction": "Panel417823x122,risk160102x279,analysis139566x279 match retaineddataframe values,dtypes,index andpicklesSHA256exactly",
+  "report_files": {
+    "raw_download_integrity.json": "03f6dfd27813a3be4a1593dbd7ef1e4263cbe08fbd13547fc912c67839d83859",
+    "raw_reconstruction_verification.json": "87743b170ad49aad1566344c9046dc434cbf2e1895ef2cb0f61c8c0e9ce0a8cd",
+    "reconstructed_aggregate_checks.json": "f73e98e3758e942627105186d5bc41cc96c0ef8409a8199fc85ab5678aaa00ce",
+    "raw_worksheet_coverage.json": "749a55afc1c26af9c557c64612cbb5da9f939833a6f042d7339355a69000d6d7",
+    "revised_numeric_independent_checks.json": "5a460451fa99bdb659e3906f27328846f1ab2b955ddbcae07ae96c2696c27de5",
+    "aggregate_verifier_tests.json": "3777c187b18c643495a2053d1052605260b1060e916ec854f5bcf67e872c4abe",
+    "source_guard_change_record.json": "f954122b5d1acf0348250678d475f97e4ba93dad26ea1c65aae5c938a1334c92"
+  },
+  "unperformed_in_this_verification": [
+    "full ten-seed refitting",
+    "all endpoint and earlier-origin refitting",
+    "new bootstrap draw generation",
+    "independent external validation"
+  ],
+  "scope": "Fresh primary/forward refit report is separate; aggregate checks rederive reported arithmetic from retained outputs; no acceptance probability estimated."
+}

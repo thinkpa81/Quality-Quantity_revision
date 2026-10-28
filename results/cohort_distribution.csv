@@ -1,0 +1,12 @@
+split,cohort,baseline_n,observed_n,events
+administrative_end,09_refreshment_or_branch,1047,0,0.0
+administrative_end,18_refreshment_or_branch,3281,0,0.0
+administrative_end,98_origin_or_branch,5228,0,0.0
+test,09_refreshment_or_branch,3082,2946,257.0
+test,18_refreshment_or_branch,9758,9286,870.0
+test,98_origin_or_branch,15470,14831,1268.0
+train,09_refreshment_or_branch,7887,7383,814.0
+train,98_origin_or_branch,86679,79159,9360.0
+validation,09_refreshment_or_branch,3015,2858,285.0
+validation,18_refreshment_or_branch,9609,8798,955.0
+validation,98_origin_or_branch,15046,14305,1362.0

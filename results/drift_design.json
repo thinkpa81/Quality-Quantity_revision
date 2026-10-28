@@ -1,0 +1,14 @@
+{
+  "age_cutpoints": [
+    0,
+    35,
+    50,
+    65,
+    "infinity"
+  ],
+  "common_support": "Age-by-cohort cells observed in all three partitions",
+  "reference": "Pooled person-wave distribution of common-support cells, held fixed during bootstrap",
+  "decomposition": "Symmetric Kitagawa decomposition within common support, plus exact full-minus-common residual; no historical 2018-cohort rate imputed",
+  "resampling": "500 paired person-cluster draws spanning all partitions",
+  "interpretation": "Descriptive decomposition; neither causal effects nor a correction of follow-up selection"
+}

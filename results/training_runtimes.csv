@@ -1,0 +1,5 @@
+analysis,model,train_n,features,seconds,training_weights
+primary,logistic,86542,138,29.043859004974365,none
+primary,random_forest,86542,138,110.9386944770813,none
+primary,xgboost,86542,138,10.49280834197998,none
+primary,catboost,86542,138,60.98462963104248,none

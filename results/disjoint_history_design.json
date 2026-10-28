@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "training_wave_range": [
+    1,
+    20
+  ],
+  "eligible_history": "At least one observed, labelled wage-employed baseline at waves 1\u201320, irrespective of hash arm",
+  "any_panel_history": "At least one observed person-file interview at waves 1\u201320, including non-wage or unlabelled records",
+  "training_people": 8901,
+  "validation_people": 1668,
+  "fit_sha256": "313a90dcc41df9e70be5a59986705f221d57ee84eefcde1c4e38755f6c4d4b17",
+  "thresholds": {
+    "raw": 0.11098800712928901,
+    "platt": 0.0960788882621946
+  },
+  "resamples": 500,
+  "seed_components": [
+    20261026,
+    147,
+    148
+  ],
+  "resampling": "Independent person resampling within each of four assignment-by-history cells; every person retains all test rows; common draws across metrics and raw/Platt outputs",
+  "scope": "Conditional diagnostic of one fitted object and realised assignment. A finite-sample negative-control difference need not be zero. Pure causal overlap or redevelopment effects are not identified.",
+  "original_all_arm_metrics_reproduced": true
+}

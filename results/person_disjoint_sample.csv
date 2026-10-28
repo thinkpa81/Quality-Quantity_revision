@@ -1,0 +1,4 @@
+partition,rows,people,events
+train,60262,8901,7067
+validation,3970,1668,400
+test,4015,1672,389

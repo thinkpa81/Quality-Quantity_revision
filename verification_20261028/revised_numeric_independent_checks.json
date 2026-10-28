@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "check": "all primary percentile confidence intervals",
+      "count": 120
+    },
+    {
+      "check": "paired percentile confidence intervals using shared replicate numbers",
+      "count": 56
+    },
+    {
+      "check": "utility arithmetic and treat-none references",
+      "count": 18
+    },
+    {
+      "check": "test worst-case prevalence bounds",
+      "lower": 0.08459908159660898,
+      "upper": 0.1286471211586012,
+      "lost_followup": 1247
+    },
+    {
+      "check": "drift components exactly recover total changes",
+      "count": 3
+    },
+    {
+      "check": "ten-seed paired contrasts recomputed from per-seed metrics",
+      "count": 50
+    },
+    {
+      "check": "raw inventory reconciliation",
+      "prior_read_files": 83,
+      "current_drive_files": 84,
+      "not_in_prior_read_audit": [
+        "eklips27w.xlsx"
+      ]
+    }
+  ],
+  "failures": []
+}

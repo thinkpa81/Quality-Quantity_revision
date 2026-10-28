@@ -1,0 +1,6264 @@
+{
+  "status": "passed",
+  "scope": "Fresh execution of twenty primary/forward base fits, one unweighted meta fit, and validation-only calibration and F1 thresholds for five primary learners.",
+  "not_reexecuted": [
+    "shuffled OOF sensitivity",
+    "ten-seed repetitions",
+    "other endpoint or subgroup refits",
+    "bootstrap interval generation"
+  ],
+  "source_analysis_sha256": "f92b5f006795de3a283a5b0dc71f999e4f330727e5ad948c2eddfe839e5049a9",
+  "code_sha256": {
+    "common.py": "63bf8c7f4fecd1c480a18ed1d4545d00b270a2e798a90162ada862fc8af79318",
+    "feature_definitions.py": "ee7fb16d6db29302e5d4f1a586dffca807f3f08c6b82090a8ec489924cdf0fb7"
+  },
+  "reference_sha256": {
+    "valid_predictions.pkl": "1e8533822042593fe869a66b88b6fc26a2682b8437e4050c6776af44781aa7e3",
+    "test_predictions.pkl": "69a01122a2e30a227df0d943592b9eed8b43d904a19b754a90f8dcef88c14ab6",
+    "forward_oof.pkl": "629878a147f1fff720b43404ecc68554781a9b8dd3695100ed28177b9d154775",
+    "model_features.json": "949ee0bd625e0c6c09fd62ff99d007becc9feadc922b212e6910e1016ca3426f",
+    "model_calibration_metrics.csv": "fb6374b4bb9a01a240f700382340c855869ab6f2729982017182a606c7829f00",
+    "selected_thresholds.csv": "9cad89d5de0d6cab87c5aa75d843002b791b6e864def822aceed3dfad005cd60"
+  },
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "seed": 20261026,
+  "threads_per_model": 3,
+  "fitted_model_cache_reused": false,
+  "counts": {
+    "training": 86542,
+    "validation": 25961,
+    "test": 27063
+  },
+  "probability_atol": 1e-10,
+  "metric_atol": 1e-10,
+  "fit_records": [
+    {
+      "stage": "primary",
+      "model": "logistic",
+      "training_rows": 86542,
+      "features": 138,
+      "fit_seconds": 76.26757669448853,
+      "convergence_iterations": [
+        953
+      ]
+    },
+    {
+      "stage": "primary",
+      "model": "random_forest",
+      "training_rows": 86542,
+      "features": 138,
+      "fit_seconds": 247.81692838668823,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "primary",
+      "model": "xgboost",
+      "training_rows": 86542,
+      "features": 138,
+      "fit_seconds": 16.970983266830444,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "primary",
+      "model": "catboost",
+      "training_rows": 86542,
+      "features": 138,
+      "fit_seconds": 107.43223404884338,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_7",
+      "model": "logistic",
+      "training_rows": 24806,
+      "features": 136,
+      "fit_seconds": 9.399094104766846,
+      "convergence_iterations": [
+        617
+      ]
+    },
+    {
+      "stage": "forward_7",
+      "model": "random_forest",
+      "training_rows": 24806,
+      "features": 136,
+      "fit_seconds": 52.56167960166931,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_7",
+      "model": "xgboost",
+      "training_rows": 24806,
+      "features": 136,
+      "fit_seconds": 7.189671993255615,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_7",
+      "model": "catboost",
+      "training_rows": 24806,
+      "features": 136,
+      "fit_seconds": 47.39682602882385,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_10",
+      "model": "logistic",
+      "training_rows": 36500,
+      "features": 138,
+      "fit_seconds": 22.000057458877563,
+      "convergence_iterations": [
+        712
+      ]
+    },
+    {
+      "stage": "forward_10",
+      "model": "random_forest",
+      "training_rows": 36500,
+      "features": 138,
+      "fit_seconds": 90.84454131126404,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_10",
+      "model": "xgboost",
+      "training_rows": 36500,
+      "features": 138,
+      "fit_seconds": 9.626355648040771,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_10",
+      "model": "catboost",
+      "training_rows": 36500,
+      "features": 138,
+      "fit_seconds": 36.784409523010254,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_13",
+      "model": "logistic",
+      "training_rows": 49879,
+      "features": 138,
+      "fit_seconds": 37.40483856201172,
+      "convergence_iterations": [
+        814
+      ]
+    },
+    {
+      "stage": "forward_13",
+      "model": "random_forest",
+      "training_rows": 49879,
+      "features": 138,
+      "fit_seconds": 141.89743208885193,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_13",
+      "model": "xgboost",
+      "training_rows": 49879,
+      "features": 138,
+      "fit_seconds": 17.53577971458435,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_13",
+      "model": "catboost",
+      "training_rows": 49879,
+      "features": 138,
+      "fit_seconds": 73.31018686294556,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_16",
+      "model": "logistic",
+      "training_rows": 64860,
+      "features": 138,
+      "fit_seconds": 54.681610107421875,
+      "convergence_iterations": [
+        845
+      ]
+    },
+    {
+      "stage": "forward_16",
+      "model": "random_forest",
+      "training_rows": 64860,
+      "features": 138,
+      "fit_seconds": 217.86325311660767,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_16",
+      "model": "xgboost",
+      "training_rows": 64860,
+      "features": 138,
+      "fit_seconds": 12.410040616989136,
+      "convergence_iterations": null
+    },
+    {
+      "stage": "forward_16",
+      "model": "catboost",
+      "training_rows": 64860,
+      "features": 138,
+      "fit_seconds": 92.97422671318054,
+      "convergence_iterations": null
+    }
+  ],
+  "probability_comparisons": [
+    {
+      "stage": "primary_validation",
+      "model": "logistic",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_test",
+      "model": "logistic",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_validation",
+      "model": "random_forest",
+      "n": 25961,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 4.923240911583767e-18,
+      "rmse_probability_difference": 1.2514946977876695e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_test",
+      "model": "random_forest",
+      "n": 27063,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 5.31043129488163e-18,
+      "rmse_probability_difference": 1.2812978201165451e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_validation",
+      "model": "xgboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_test",
+      "model": "xgboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_validation",
+      "model": "catboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "primary_test",
+      "model": "catboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_7",
+      "model": "logistic",
+      "n": 11846,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_7",
+      "model": "random_forest",
+      "n": 11846,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 4.965181004260478e-18,
+      "rmse_probability_difference": 1.4392161272699322e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_7",
+      "model": "xgboost",
+      "n": 11846,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_7",
+      "model": "catboost",
+      "n": 11846,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_10",
+      "model": "logistic",
+      "n": 14434,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_10",
+      "model": "random_forest",
+      "n": 14434,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 3.675200491573421e-18,
+      "rmse_probability_difference": 1.1908694595107757e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_10",
+      "model": "xgboost",
+      "n": 14434,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_10",
+      "model": "catboost",
+      "n": 14434,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_13",
+      "model": "logistic",
+      "n": 15064,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_13",
+      "model": "random_forest",
+      "n": 15064,
+      "max_abs_probability_difference": 1.6653345369377348e-16,
+      "mean_abs_probability_difference": 3.773230842661714e-18,
+      "rmse_probability_difference": 1.1767568002012152e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_13",
+      "model": "xgboost",
+      "n": 15064,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_13",
+      "model": "catboost",
+      "n": 15064,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_16",
+      "model": "logistic",
+      "n": 16621,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_16",
+      "model": "random_forest",
+      "n": 16621,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 2.7345038656796425e-18,
+      "rmse_probability_difference": 9.390957652132701e-18,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_16",
+      "model": "xgboost",
+      "n": 16621,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "forward_16",
+      "model": "catboost",
+      "n": 16621,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_validation",
+      "model": "logistic",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_test",
+      "model": "logistic",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_validation",
+      "model": "logistic",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_test",
+      "model": "logistic",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_validation",
+      "model": "logistic",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_test",
+      "model": "logistic",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_validation",
+      "model": "random_forest",
+      "n": 25961,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 4.923240911583767e-18,
+      "rmse_probability_difference": 1.2514946977876695e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_test",
+      "model": "random_forest",
+      "n": 27063,
+      "max_abs_probability_difference": 1.1102230246251565e-16,
+      "mean_abs_probability_difference": 5.31043129488163e-18,
+      "rmse_probability_difference": 1.2812978201165451e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_validation",
+      "model": "random_forest",
+      "n": 25961,
+      "max_abs_probability_difference": 2.220446049250313e-16,
+      "mean_abs_probability_difference": 2.770885147593565e-17,
+      "rmse_probability_difference": 3.5249554590770757e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_test",
+      "model": "random_forest",
+      "n": 27063,
+      "max_abs_probability_difference": 2.220446049250313e-16,
+      "mean_abs_probability_difference": 2.861125522844654e-17,
+      "rmse_probability_difference": 3.593368578903434e-17,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_validation",
+      "model": "random_forest",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_test",
+      "model": "random_forest",
+      "n": 27063,
+      "max_abs_probability_difference": 2.680078381445128e-13,
+      "mean_abs_probability_difference": 2.2151616904076302e-17,
+      "rmse_probability_difference": 1.7743374357879462e-15,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_validation",
+      "model": "xgboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_test",
+      "model": "xgboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_validation",
+      "model": "xgboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_test",
+      "model": "xgboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_validation",
+      "model": "xgboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_test",
+      "model": "xgboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_validation",
+      "model": "catboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_test",
+      "model": "catboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_validation",
+      "model": "catboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_test",
+      "model": "catboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_validation",
+      "model": "catboost",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_test",
+      "model": "catboost",
+      "n": 27063,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_validation",
+      "model": "forward_stack",
+      "n": 25961,
+      "max_abs_probability_difference": 2.275957200481571e-14,
+      "mean_abs_probability_difference": 9.318989840208996e-16,
+      "rmse_probability_difference": 1.902276236181104e-15,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "raw_test",
+      "model": "forward_stack",
+      "n": 27063,
+      "max_abs_probability_difference": 2.7200464103316335e-14,
+      "mean_abs_probability_difference": 9.526129838766472e-16,
+      "rmse_probability_difference": 1.979361186613495e-15,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_validation",
+      "model": "forward_stack",
+      "n": 25961,
+      "max_abs_probability_difference": 2.7033930649622562e-14,
+      "mean_abs_probability_difference": 9.938438672024272e-16,
+      "rmse_probability_difference": 1.994081384885673e-15,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "platt_test",
+      "model": "forward_stack",
+      "n": 27063,
+      "max_abs_probability_difference": 3.36952687973735e-14,
+      "mean_abs_probability_difference": 1.0391233994046975e-15,
+      "rmse_probability_difference": 2.1615244539619017e-15,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_validation",
+      "model": "forward_stack",
+      "n": 25961,
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "rmse_probability_difference": 0.0,
+      "bitwise_equal_values": true,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    },
+    {
+      "stage": "isotonic_test",
+      "model": "forward_stack",
+      "n": 27063,
+      "max_abs_probability_difference": 6.173311861701336e-12,
+      "mean_abs_probability_difference": 1.453159915590954e-15,
+      "rmse_probability_difference": 6.723327298937497e-14,
+      "bitwise_equal_values": false,
+      "within_absolute_tolerance": true,
+      "absolute_tolerance": 1e-10
+    }
+  ],
+  "metric_comparisons": [
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7094059113211988,
+      "reference": 0.7094059113211988,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2031660760388828,
+      "reference": 0.2031660760388828,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08614834063327884,
+      "reference": 0.08614834063327884,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4120676402767105,
+      "reference": 0.4120676402767105,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.0603382013835523,
+      "reference": 2.0603382013835523,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.017497236175851066,
+      "reference": 0.017497236175851066,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.09028297799378757,
+      "reference": 0.09028297799378757,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.19714330560351592,
+      "reference": 0.19714330560351592,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4827056110684089,
+      "reference": 0.4827056110684089,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.2799509640031205,
+      "reference": 0.2799509640031205,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24540657139555488,
+      "reference": 0.24540657139555488,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.11990913804503903,
+      "reference": 0.11990913804503903,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": 0.12606646459679394,
+      "reference": 0.12606646459679394,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 0.8084284988859547,
+      "reference": 0.8084284988859547,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.27076314548191405,
+      "reference": -0.27076314548191405,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.706171781720539,
+      "reference": 0.706171781720539,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.1769988210645185,
+      "reference": 0.1769988210645185,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.0779562244147167,
+      "reference": 0.0779562244147167,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.40501043841336115,
+      "reference": 0.40501043841336115,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.0250521920668056,
+      "reference": 2.0250521920668056,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.013496034684156479,
+      "reference": 0.013496034684156479,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.08650244327851793,
+      "reference": 0.08650244327851793,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1761223482979773,
+      "reference": 0.1761223482979773,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4471816283924843,
+      "reference": 0.4471816283924843,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2527135441245871,
+      "reference": 0.2527135441245871,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22469792705908437,
+      "reference": 0.22469792705908437,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.11990913804503903,
+      "reference": 0.11990913804503903,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": 0.02717090704378613,
+      "reference": 0.02717090704378613,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.7819692650435869,
+      "reference": 0.7819692650435869,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.43249375934019796,
+      "reference": -0.43249375934019796,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7094059113211988,
+      "reference": 0.7094059113211988,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2031660760388828,
+      "reference": 0.2031660760388828,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.0856668198966746,
+      "reference": 0.0856668198966746,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4120676402767105,
+      "reference": 0.4120676402767105,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.0603382013835523,
+      "reference": 2.0603382013835523,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.00460484772627371,
+      "reference": 0.00460484772627371,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639724394,
+      "reference": 0.1002272639724394,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.19714330560351592,
+      "reference": 0.19714330560351592,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4827056110684089,
+      "reference": 0.4827056110684089,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.2799509640031205,
+      "reference": 0.2799509640031205,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24540657139555488,
+      "reference": 0.24540657139555488,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.13213680555563317,
+      "reference": 0.13213680555563317,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": 5.211400404068976e-12,
+      "reference": 5.211400404068976e-12,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000000000030913,
+      "reference": 1.0000000000030913,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 1.1344807839162216e-11,
+      "reference": 1.1344807839162216e-11,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.706171781720539,
+      "reference": 0.706171781720539,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.1769988210645185,
+      "reference": 0.1769988210645185,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.0774999402713787,
+      "reference": 0.0774999402713787,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.40501043841336115,
+      "reference": 0.40501043841336115,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.0250521920668056,
+      "reference": 2.0250521920668056,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.008328812669165787,
+      "reference": 0.008328812669165787,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.09680549088696778,
+      "reference": 0.09680549088696778,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1761223482979773,
+      "reference": 0.1761223482979773,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4471816283924843,
+      "reference": 0.4471816283924843,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2527135441245871,
+      "reference": 0.2527135441245871,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22469792705908437,
+      "reference": 0.22469792705908437,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.13213680555563317,
+      "reference": 0.13213680555563317,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.10460441497072624,
+      "reference": -0.10460441497072624,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.9672707804383276,
+      "reference": 0.9672707804383276,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.17059248028580928,
+      "reference": -0.17059248028580928,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7119920941910645,
+      "reference": 0.7119920941910645,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2001541935153131,
+      "reference": 0.2001541935153131,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08527963322602271,
+      "reference": 0.08527963322602271,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.41491160645657194,
+      "reference": 0.41491160645657194,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.0745580322828596,
+      "reference": 2.0745580322828596,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 3.720557880759163e-18,
+      "reference": 3.720557880759163e-18,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.19714330560351592,
+      "reference": 0.19714330560351592,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4827056110684089,
+      "reference": 0.4827056110684089,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.2799509640031205,
+      "reference": 0.2799509640031205,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24540657139555488,
+      "reference": 0.24540657139555488,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.1443609022556391,
+      "reference": 0.1443609022556391,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -8.672303391431762e-08,
+      "reference": -8.672303391431762e-08,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000022328203693,
+      "reference": 1.0000022328203693,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 4.249016640247937e-06,
+      "reference": 4.249016640247937e-06,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7048669885135138,
+      "reference": 0.7048669885135138,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.1709036650572624,
+      "reference": 0.1709036650572624,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.0773201583716665,
+      "reference": 0.0773201583716665,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.40504352621420414,
+      "reference": 0.40504352621420414,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.0252176310710204,
+      "reference": 2.0252176310710204,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.008212180049303705,
+      "reference": 0.008212180049303705,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.0966724394440493,
+      "reference": 0.0966724394440493,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1761223482979773,
+      "reference": 0.1761223482979773,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4471816283924843,
+      "reference": 0.4471816283924843,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2527135441245871,
+      "reference": 0.2527135441245871,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22469792705908437,
+      "reference": 0.22469792705908437,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.1443609022556391,
+      "reference": 0.1443609022556391,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.10269083440330397,
+      "reference": -0.10269083440330397,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.9219563614138355,
+      "reference": 0.9219563614138355,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "logistic",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.2574341879078687,
+      "reference": -0.2574341879078687,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7243937236186346,
+      "reference": 0.7243937236186346,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2166786201964236,
+      "reference": 0.2166786201964236,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.0847491276769325,
+      "reference": 0.0847491276769325,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4197540353574177,
+      "reference": 0.4197540353574177,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.098770176787088,
+      "reference": 2.098770176787088,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.006530938229715531,
+      "reference": 0.006530938229715531,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.10624137101540253,
+      "reference": 0.10624137101540253,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20239043824701194,
+      "reference": 0.20239043824701194,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4880860876249039,
+      "reference": 0.4880860876249039,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28613270248957984,
+      "reference": 0.28613270248957984,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24170871692153614,
+      "reference": 0.24170871692153614,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.14515177132821444,
+      "reference": 0.14515177132821447,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -0.06879710927314371,
+      "reference": -0.06879710927314374,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.1099542072070987,
+      "reference": 1.109954207207099,
+      "absolute_difference": 2.220446049250313e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 0.13874748674043705,
+      "reference": 0.1387474867404375,
+      "absolute_difference": 4.440892098500626e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7307765624359978,
+      "reference": 0.7307765624359978,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19628145530037924,
+      "reference": 0.19628145530037924,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07634275507399849,
+      "reference": 0.07634275507399849,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4501043841336117,
+      "reference": 0.4501043841336117,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.2505219206680582,
+      "reference": 2.2505219206680582,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.014862401889743672,
+      "reference": 0.014862401889743672,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.1033596121029499,
+      "reference": 0.1033596121029499,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.19332662642521797,
+      "reference": 0.19332662642521797,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.481419624217119,
+      "reference": 0.481419624217119,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2758703194161981,
+      "reference": 0.2758703194161981,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22037468129919077,
+      "reference": 0.22037468129919077,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.14515177132821444,
+      "reference": 0.14515177132821447,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.18050530602250753,
+      "reference": -0.18050530602250753,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.1659980556747795,
+      "reference": 1.1659980556747798,
+      "absolute_difference": 2.220446049250313e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": 0.13686759891351535,
+      "reference": 0.13686759891351571,
+      "absolute_difference": 3.608224830031759e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7243937236186346,
+      "reference": 0.7243937236186346,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2166786201964236,
+      "reference": 0.2166786201964236,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08476225261036106,
+      "reference": 0.08476225261036106,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4197540353574177,
+      "reference": 0.4197540353574177,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.098770176787088,
+      "reference": 2.098770176787088,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.0035156558444709948,
+      "reference": 0.0035156558444710195,
+      "absolute_difference": 2.47198095326695e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.10022726397672714,
+      "reference": 0.10022726397672711,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20239043824701194,
+      "reference": 0.20239043824701194,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4880860876249039,
+      "reference": 0.4880860876249039,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28613270248957984,
+      "reference": 0.28613270248957984,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24170871692153614,
+      "reference": 0.24170871692153614,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.13831438877478877,
+      "reference": 0.1383143887747888,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -4.5632944136000004e-11,
+      "reference": -4.563264527533399e-11,
+      "absolute_difference": 2.988606660122018e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 0.9999999999808202,
+      "reference": 0.9999999999808203,
+      "absolute_difference": 1.1102230246251565e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": -8.276850964983459e-11,
+      "reference": -8.276796120247388e-11,
+      "absolute_difference": 5.48447360710565e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7307765624359978,
+      "reference": 0.7307765624359978,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19628145530037924,
+      "reference": 0.19628145530037924,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07624950978525862,
+      "reference": 0.07624950978525862,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4501043841336117,
+      "reference": 0.4501043841336117,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.2505219206680582,
+      "reference": 2.2505219206680582,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.008559359101878633,
+      "reference": 0.008559359101878607,
+      "absolute_difference": 2.6020852139652106e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.09705656931508484,
+      "reference": 0.09705656931508483,
+      "absolute_difference": 1.3877787807814457e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.19332662642521797,
+      "reference": 0.19332662642521797,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.481419624217119,
+      "reference": 0.481419624217119,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2758703194161981,
+      "reference": 0.2758703194161981,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22037468129919077,
+      "reference": 0.22037468129919077,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.13831438877478877,
+      "reference": 0.1383143887747888,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.10802328592668803,
+      "reference": -0.10802328592668782,
+      "absolute_difference": 2.0816681711721685e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.0504920365916164,
+      "reference": 1.050492036591616,
+      "absolute_difference": 4.440892098500626e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.008885531094153526,
+      "reference": -0.008885531094154154,
+      "absolute_difference": 6.279698983036042e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7269166127647201,
+      "reference": 0.7269166127647201,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2131137087626781,
+      "reference": 0.2131137087626781,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08437477508835815,
+      "reference": 0.08437477508835815,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4259219429457109,
+      "reference": 0.4259219429457109,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1296097147285544,
+      "reference": 2.1296097147285544,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 4.413351417176386e-18,
+      "reference": 4.413351417176386e-18,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20239043824701194,
+      "reference": 0.20239043824701194,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4880860876249039,
+      "reference": 0.4880860876249039,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28613270248957984,
+      "reference": 0.28613270248957984,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24170871692153614,
+      "reference": 0.24170871692153614,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.14938225383751405,
+      "reference": 0.14938225383751405,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -6.66528601390896e-08,
+      "reference": -6.66528601390896e-08,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000015663533703,
+      "reference": 1.0000015663533703,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 2.920858670245105e-06,
+      "reference": 2.920858670245105e-06,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7294602086057753,
+      "reference": 0.7294602086057753,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.1871698673153114,
+      "reference": 0.1871698673153114,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07637366823151084,
+      "reference": 0.07637366823151086,
+      "absolute_difference": 1.3877787807814457e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.445443417406208,
+      "reference": 0.445443417406208,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.22721708703104,
+      "reference": 2.22721708703104,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.008771506596837834,
+      "reference": 0.008771506596837828,
+      "absolute_difference": 6.938893903907228e-18,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.09726871681004406,
+      "reference": 0.09726871681004405,
+      "absolute_difference": 1.3877787807814457e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.19332662642521797,
+      "reference": 0.19332662642521797,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.481419624217119,
+      "reference": 0.481419624217119,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2758703194161981,
+      "reference": 0.2758703194161981,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22037468129919077,
+      "reference": 0.22037468129919077,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.14938225383751405,
+      "reference": 0.14938225383751405,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.11046089822004006,
+      "reference": -0.11046089822003997,
+      "absolute_difference": 8.326672684688674e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.9926281972872005,
+      "reference": 0.9926281972871983,
+      "absolute_difference": 2.220446049250313e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "random_forest",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.124788908533094,
+      "reference": -0.12478890853309857,
+      "absolute_difference": 4.565792188770956e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7265260327398508,
+      "reference": 0.7265260327398508,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.21888709850456892,
+      "reference": 0.21888709850456892,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08483350448788442,
+      "reference": 0.08483350448788442,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4200614911606457,
+      "reference": 0.4200614911606457,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1003074558032284,
+      "reference": 2.1003074558032284,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.0075841377463206384,
+      "reference": 0.0075841377463206384,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.09985011684176502,
+      "reference": 0.09985011684176502,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.18519793459552494,
+      "reference": 0.18519793459552494,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.6202920830130668,
+      "reference": 0.6202920830130668,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28523460280993196,
+      "reference": 0.28523460280993196,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.335695851469512,
+      "reference": 0.335695851469512,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.1151820570230484,
+      "reference": 0.1151820570230484,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": 0.004552340443099648,
+      "reference": 0.004552340443099648,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 0.904707451110466,
+      "reference": 0.904707451110466,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.17802284461055756,
+      "reference": -0.17802284461055756,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7265189947978887,
+      "reference": 0.7265189947978887,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19204595192001278,
+      "reference": 0.19204595192001278,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.0769415717412453,
+      "reference": 0.0769415717412453,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.42045929018789147,
+      "reference": 0.42045929018789147,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.1022964509394573,
+      "reference": 2.1022964509394573,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.011956531414072156,
+      "reference": 0.011956531414072156,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10045374162727838,
+      "reference": 0.10045374162727838,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.163557010365521,
+      "reference": 0.163557010365521,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.6258872651356994,
+      "reference": 0.6258872651356994,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2593425605536332,
+      "reference": 0.2593425605536332,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.33865425119166387,
+      "reference": 0.33865425119166387,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.1151820570230484,
+      "reference": 0.1151820570230484,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.15158595663383564,
+      "reference": -0.15158595663383564,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.8914493897915053,
+      "reference": 0.8914493897915053,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.3568098200368461,
+      "reference": -0.3568098200368461,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7265260327398508,
+      "reference": 0.7265260327398508,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.21888709850456892,
+      "reference": 0.21888709850456892,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08468309602130468,
+      "reference": 0.08468309602130468,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4200614911606457,
+      "reference": 0.4200614911606457,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1003074558032284,
+      "reference": 2.1003074558032284,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.0027573530005117197,
+      "reference": 0.0027573530005117197,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.10022726397804994,
+      "reference": 0.10022726397804994,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.18519793459552494,
+      "reference": 0.18519793459552494,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.6202920830130668,
+      "reference": 0.6202920830130668,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28523460280993196,
+      "reference": 0.28523460280993196,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.335695851469512,
+      "reference": 0.335695851469512,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.11685022179621884,
+      "reference": 0.11685022179621884,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -6.140139124066449e-11,
+      "reference": -6.140139124066449e-11,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000000001198424,
+      "reference": 1.0000000001198424,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 1.7011136924147426e-10,
+      "reference": 1.7011136924147426e-10,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7265189947978887,
+      "reference": 0.7265189947978887,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19204595192001278,
+      "reference": 0.19204595192001278,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07666820229599673,
+      "reference": 0.07666820229599673,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.42045929018789147,
+      "reference": 0.42045929018789147,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.1022964509394573,
+      "reference": 2.1022964509394573,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.012284944959081901,
+      "reference": 0.012284944959081901,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10078215517228811,
+      "reference": 0.10078215517228811,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.163557010365521,
+      "reference": 0.163557010365521,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.6258872651356994,
+      "reference": 0.6258872651356994,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2593425605536332,
+      "reference": 0.2593425605536332,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.33865425119166387,
+      "reference": 0.33865425119166387,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.11685022179621884,
+      "reference": 0.11685022179621884,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.15340588157252522,
+      "reference": -0.15340588157252522,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.985345471405311,
+      "reference": 0.985345471405311,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.18139581614654415,
+      "reference": -0.18139581614654415,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.728650230656018,
+      "reference": 0.728650230656018,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.21447537867387714,
+      "reference": 0.21447537867387714,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08435517504564408,
+      "reference": 0.08435517504564408,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4225714423976151,
+      "reference": 0.4225714423976151,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1128572119880755,
+      "reference": 2.1128572119880755,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 6.222312317821358e-18,
+      "reference": 6.222312317821358e-18,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.18519793459552494,
+      "reference": 0.18519793459552494,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.6202920830130668,
+      "reference": 0.6202920830130668,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28523460280993196,
+      "reference": 0.28523460280993196,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.335695851469512,
+      "reference": 0.335695851469512,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.14285714285714285,
+      "reference": 0.14285714285714285,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -7.58009970007731e-08,
+      "reference": -7.58009970007731e-08,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000016980961621,
+      "reference": 1.0000016980961621,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 3.150282337182644e-06,
+      "reference": 3.150282337182644e-06,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.725287534533765,
+      "reference": 0.725287534533765,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.18502930885453422,
+      "reference": 0.18502930885453422,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.0765993770617151,
+      "reference": 0.0765993770617151,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4198990941422249,
+      "reference": 0.4198990941422249,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.0994954707111244,
+      "reference": 2.0994954707111244,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.012256295944612269,
+      "reference": 0.012256295944612269,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10070553069526236,
+      "reference": 0.10070553069526236,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.163557010365521,
+      "reference": 0.163557010365521,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.6258872651356994,
+      "reference": 0.6258872651356994,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.2593425605536332,
+      "reference": 0.2593425605536332,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.33865425119166387,
+      "reference": 0.33865425119166387,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.14285714285714285,
+      "reference": 0.14285714285714285,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.15219652545269208,
+      "reference": -0.15219652545269208,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 0.9498718326313721,
+      "reference": 0.9498718326313721,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "xgboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.24689782149132888,
+      "reference": -0.24689782149132888,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7248177109494918,
+      "reference": 0.7248177109494918,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.21636680772698663,
+      "reference": 0.21636680772698663,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.0849598758177576,
+      "reference": 0.0849598758177576,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.41775557263643354,
+      "reference": 0.41775557263643354,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.0887778631821674,
+      "reference": 2.0887778631821674,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.006309714317443714,
+      "reference": 0.006309714317443714,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.106529803971478,
+      "reference": 0.106529803971478,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20256,
+      "reference": 0.20256,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4865488086087625,
+      "reference": 0.4865488086087625,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28603705377315863,
+      "reference": 0.28603705377315863,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24074573398559376,
+      "reference": 0.24074573398559376,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.14357684053302272,
+      "reference": 0.14357684053302272,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -0.07302674972492719,
+      "reference": -0.07302674972492719,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 0.9971465939905242,
+      "reference": 0.9971465939905242,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.0783773912668178,
+      "reference": -0.0783773912668178,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7308446228545565,
+      "reference": 0.7308446228545565,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19790765064906285,
+      "reference": 0.19790765064906285,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07662034703676474,
+      "reference": 0.07662034703676474,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4344885177453029,
+      "reference": 0.4344885177453029,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.1724425887265144,
+      "reference": 2.1724425887265144,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.017950082703858537,
+      "reference": 0.017950082703858537,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10644729291706476,
+      "reference": 0.10644729291706476,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1818460594909537,
+      "reference": 0.1818460594909537,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4951983298538622,
+      "reference": 0.4951983298538622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.26600874733654817,
+      "reference": 0.26600874733654817,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.2409932380002217,
+      "reference": 0.2409932380002217,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.14357684053302272,
+      "reference": 0.14357684053302272,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.2186275598140134,
+      "reference": -0.2186275598140134,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.0294769976851612,
+      "reference": 1.0294769976851612,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.16396586619604478,
+      "reference": -0.16396586619604478,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7248177109494918,
+      "reference": 0.7248177109494918,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.21636680772698663,
+      "reference": 0.21636680772698663,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08488253757103208,
+      "reference": 0.08488253757103208,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.41775557263643354,
+      "reference": 0.41775557263643354,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.0887778631821674,
+      "reference": 2.0887778631821674,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.003947742483242287,
+      "reference": 0.003947742483242287,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.10022726417227283,
+      "reference": 0.10022726417227283,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20256,
+      "reference": 0.20256,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4865488086087625,
+      "reference": 0.4865488086087625,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28603705377315863,
+      "reference": 0.28603705377315863,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24074573398559376,
+      "reference": 0.24074573398559376,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.1347991549849266,
+      "reference": 0.1347991549849266,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -2.369361859766896e-09,
+      "reference": -2.369361859766896e-09,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.0000000022868307,
+      "reference": 1.0000000022868307,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 2.0871312190596314e-09,
+      "reference": 2.0871312190596314e-09,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7308446228545565,
+      "reference": 0.7308446228545565,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19790765064906285,
+      "reference": 0.19790765064906285,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07635555719572604,
+      "reference": 0.07635555719572604,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4344885177453029,
+      "reference": 0.4344885177453029,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.1724425887265144,
+      "reference": 2.1724425887265144,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.01164291247403973,
+      "reference": 0.01164291247403973,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10014012268724595,
+      "reference": 0.10014012268724595,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1818460594909537,
+      "reference": 0.1818460594909537,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4951983298538622,
+      "reference": 0.4951983298538622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.26600874733654817,
+      "reference": 0.26600874733654817,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.2409932380002217,
+      "reference": 0.2409932380002217,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.1347991549849266,
+      "reference": 0.1347991549849266,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.14556030388477426,
+      "reference": -0.14556030388477426,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.0324229218088123,
+      "reference": 1.0324229218088123,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.08304724893084628,
+      "reference": -0.08304724893084628,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7269825307018982,
+      "reference": 0.7269825307018982,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.2120265909949477,
+      "reference": 0.2120265909949477,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08447050063378478,
+      "reference": 0.08447050063378478,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.42725478931182775,
+      "reference": 0.42725478931182775,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1362739465591387,
+      "reference": 2.1362739465591387,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 8.505965086011465e-18,
+      "reference": 8.505965086011465e-18,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20256,
+      "reference": 0.20256,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.4865488086087625,
+      "reference": 0.4865488086087625,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.28603705377315863,
+      "reference": 0.28603705377315863,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.24074573398559376,
+      "reference": 0.24074573398559376,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.14585274930102518,
+      "reference": 0.14585274930102518,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -1.2631451204257556e-07,
+      "reference": -1.2631451204257556e-07,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.000002872076689,
+      "reference": 1.000002872076689,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 5.344694995742626e-06,
+      "reference": 5.344694995742626e-06,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7298408290067038,
+      "reference": 0.7298408290067038,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.18850987745542314,
+      "reference": 0.18850987745542314,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07631315563698733,
+      "reference": 0.07631315563698733,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4376038945443125,
+      "reference": 0.4376038945443125,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.188019472721562,
+      "reference": 2.188019472721562,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.0117293346824093,
+      "reference": 0.0117293346824093,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.10022654489561553,
+      "reference": 0.10022654489561553,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1818460594909537,
+      "reference": 0.1818460594909537,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4951983298538622,
+      "reference": 0.4951983298538622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.26600874733654817,
+      "reference": 0.26600874733654817,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.2409932380002217,
+      "reference": 0.2409932380002217,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.14585274930102518,
+      "reference": 0.14585274930102518,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.14604753630056513,
+      "reference": -0.14604753630056513,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.0015925696636843,
+      "reference": 1.0015925696636843,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "catboost",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.14303046669340536,
+      "reference": -0.14303046669340536,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7305469528703448,
+      "reference": 0.7305469528703448,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.22274213955812538,
+      "reference": 0.22274213955812538,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08536344300782565,
+      "reference": 0.08536344300782565,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4350499615680246,
+      "reference": 0.4350499615680246,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.175249807840123,
+      "reference": 2.175249807840123,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.011302050979031936,
+      "reference": 0.011302050979031858,
+      "absolute_difference": 7.806255641895632e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.09107377807531544,
+      "reference": 0.09107377807531526,
+      "absolute_difference": 1.8041124150158794e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20811772315653299,
+      "reference": 0.20811772315653299,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.494619523443505,
+      "reference": 0.494619523443505,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.29296608240382427,
+      "reference": 0.29296608240382427,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.2382034590347059,
+      "reference": 0.2382034590347059,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.10484567858323017,
+      "reference": 0.10484567858323117,
+      "absolute_difference": 9.992007221626409e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": 0.11173054082878349,
+      "reference": 0.11173054082878532,
+      "absolute_difference": 1.8318679906315083e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.1407726438823111,
+      "reference": 1.1407726438823256,
+      "absolute_difference": 1.4432899320127035e-14,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 0.4153133402277723,
+      "reference": 0.41531334022780564,
+      "absolute_difference": 3.3362201889985954e-14,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7360921132853055,
+      "reference": 0.7360921132853055,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.201361543423316,
+      "reference": 0.201361543423316,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07658813197788353,
+      "reference": 0.07658813197788353,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.45052192066805846,
+      "reference": 0.45052192066805846,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.252609603340292,
+      "reference": 2.252609603340292,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.014904131015324758,
+      "reference": 0.014904131015324992,
+      "absolute_difference": 2.3418766925686896e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.08926686557283203,
+      "reference": 0.08926686557283196,
+      "absolute_difference": 6.938893903907228e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1913929784824462,
+      "reference": 0.1913929784824462,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4939457202505219,
+      "reference": 0.4939457202505219,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.27588619402985076,
+      "reference": 0.27588619402985076,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22839300890514724,
+      "reference": 0.22839300890514724,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.10484567858323017,
+      "reference": 0.10484567858323117,
+      "absolute_difference": 9.992007221626409e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.009957996611805974,
+      "reference": -0.009957996611804864,
+      "absolute_difference": 1.1102230246251565e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.190287394091275,
+      "reference": 1.1902873940912904,
+      "absolute_difference": 1.532107773982716e-14,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "raw",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": 0.401972740056646,
+      "reference": 0.40197274005668093,
+      "absolute_difference": 3.4916514124461173e-14,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7305469528703448,
+      "reference": 0.7305469528703448,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.22274213955812538,
+      "reference": 0.22274213955812538,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08537131717079682,
+      "reference": 0.08537131717079682,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.4350499615680246,
+      "reference": 0.4350499615680246,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.175249807840123,
+      "reference": 2.175249807840123,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 0.012348049873558116,
+      "reference": 0.012348049873558002,
+      "absolute_difference": 1.1449174941446927e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.10022726398164401,
+      "reference": 0.10022726398164399,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20811772315653299,
+      "reference": 0.20811772315653299,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.494619523443505,
+      "reference": 0.494619523443505,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.29296608240382427,
+      "reference": 0.29296608240382427,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.2382034590347059,
+      "reference": 0.2382034590347059,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.11597803291417459,
+      "reference": 0.11597803291417605,
+      "absolute_difference": 1.457167719820518e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -1.0469166614982127e-10,
+      "reference": -1.0469150917193442e-10,
+      "absolute_difference": 1.5697788685805776e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.000000000710726,
+      "reference": 1.000000000710725,
+      "absolute_difference": 8.881784197001252e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 1.3364888982088726e-09,
+      "reference": 1.3364871472267437e-09,
+      "absolute_difference": 1.7509821288495413e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7360921132853055,
+      "reference": 0.7360921132853055,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.201361543423316,
+      "reference": 0.201361543423316,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07682344741906365,
+      "reference": 0.07682344741906363,
+      "absolute_difference": 1.3877787807814457e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.45052192066805846,
+      "reference": 0.45052192066805846,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.252609603340292,
+      "reference": 2.252609603340292,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.017359994103099134,
+      "reference": 0.017359994103099005,
+      "absolute_difference": 1.2836953722228372e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.09797357726403218,
+      "reference": 0.0979735772640322,
+      "absolute_difference": 2.7755575615628914e-17,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1913929784824462,
+      "reference": 0.1913929784824462,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4939457202505219,
+      "reference": 0.4939457202505219,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.27588619402985076,
+      "reference": 0.27588619402985076,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22839300890514724,
+      "reference": 0.22839300890514724,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.11597803291417459,
+      "reference": 0.11597803291417605,
+      "absolute_difference": 1.457167719820518e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.1197478947184883,
+      "reference": -0.11974789471848886,
+      "absolute_difference": 5.551115123125783e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.0434045743649865,
+      "reference": 1.0434045743649862,
+      "absolute_difference": 2.220446049250313e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "platt",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.03136709722932883,
+      "reference": -0.03136709722932966,
+      "absolute_difference": 8.326672684688674e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "n",
+      "fresh": 25961,
+      "reference": 25961.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "events",
+      "fresh": 2602,
+      "reference": 2602.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "event_rate",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "roc_auc",
+      "fresh": 0.7327166590890791,
+      "reference": 0.7327166590890791,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "pr_auc",
+      "fresh": 0.22018034852013377,
+      "reference": 0.22018034852013377,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "brier",
+      "fresh": 0.08411396788540973,
+      "reference": 0.08411396788540973,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall20",
+      "fresh": 0.43629381104933324,
+      "reference": 0.43629381104933324,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "lift20",
+      "fresh": 2.1814690552466662,
+      "reference": 2.1814690552466662,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "ece10",
+      "fresh": 8.06548524495607e-18,
+      "reference": 8.06548524495607e-18,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "mean_probability",
+      "fresh": 0.1002272639728824,
+      "reference": 0.1002272639728824,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "precision",
+      "fresh": 0.20811772315653299,
+      "reference": 0.20811772315653299,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "recall",
+      "fresh": 0.494619523443505,
+      "reference": 0.494619523443505,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "f1",
+      "fresh": 0.29296608240382427,
+      "reference": 0.29296608240382427,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "positive_rate",
+      "fresh": 0.2382034590347059,
+      "reference": 0.2382034590347059,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "threshold",
+      "fresh": 0.1518987341772152,
+      "reference": 0.1518987341772152,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_intercept",
+      "fresh": -5.678480397670214e-08,
+      "reference": -5.678480397670214e-08,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_slope",
+      "fresh": 1.000001288659484,
+      "reference": 1.000001288659484,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "validation",
+      "metric": "calibration_joint_intercept",
+      "fresh": 2.3815449592619256e-06,
+      "reference": 2.3815449592619256e-06,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "n",
+      "fresh": 27063,
+      "reference": 27063.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "events",
+      "fresh": 2395,
+      "reference": 2395.0,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "event_rate",
+      "fresh": 0.08849721021320622,
+      "reference": 0.08849721021320622,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "roc_auc",
+      "fresh": 0.7351376255800198,
+      "reference": 0.7351376255800198,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "pr_auc",
+      "fresh": 0.19591504537173446,
+      "reference": 0.19591504537173446,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "brier",
+      "fresh": 0.07597263177670176,
+      "reference": 0.07597263177670123,
+      "absolute_difference": 5.273559366969494e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall20",
+      "fresh": 0.4525259657567931,
+      "reference": 0.4525259657567931,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "lift20",
+      "fresh": 2.2626298287839655,
+      "reference": 2.2626298287839655,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "ece10",
+      "fresh": 0.010166610416173429,
+      "reference": 0.010166610416173219,
+      "absolute_difference": 2.0990154059319366e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "mean_probability",
+      "fresh": 0.09866382062937964,
+      "reference": 0.09866382062937944,
+      "absolute_difference": 2.0816681711721685e-16,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "precision",
+      "fresh": 0.1913929784824462,
+      "reference": 0.1913929784824462,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "recall",
+      "fresh": 0.4939457202505219,
+      "reference": 0.4939457202505219,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "f1",
+      "fresh": 0.27588619402985076,
+      "reference": 0.27588619402985076,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "positive_rate",
+      "fresh": 0.22839300890514724,
+      "reference": 0.22839300890514724,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "threshold",
+      "fresh": 0.1518987341772152,
+      "reference": 0.1518987341772152,
+      "absolute_difference": 0.0,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_intercept",
+      "fresh": -0.1277140045576001,
+      "reference": -0.12771400455759765,
+      "absolute_difference": 2.4424906541753444e-15,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_slope",
+      "fresh": 1.007785430577935,
+      "reference": 1.0077854305779852,
+      "absolute_difference": 5.0182080713057076e-14,
+      "within_absolute_tolerance": true
+    },
+    {
+      "model": "forward_stack",
+      "method": "isotonic",
+      "partition": "test",
+      "metric": "calibration_joint_intercept",
+      "fresh": -0.11289329637787082,
+      "reference": -0.11289329637777318,
+      "absolute_difference": 9.764411501578252e-14,
+      "within_absolute_tolerance": true
+    }
+  ],
+  "elapsed_seconds": 1437.6277103424072,
+  "meta_coefficients": {
+    "logistic": 0.022206057578921207,
+    "random_forest": 4.480351893876645,
+    "xgboost": 1.4287264866973692,
+    "catboost": 1.7398809704374008
+  },
+  "meta_intercept": -3.2533237356167697,
+  "meta_convergence_iterations": 21,
+  "forward_folds": [
+    {
+      "train_end": 7,
+      "latest_training_outcome_wave": 8,
+      "oof_start": 9,
+      "oof_end": 11,
+      "train_n": 24806,
+      "oof_n": 11846,
+      "feature_n": 136
+    },
+    {
+      "train_end": 10,
+      "latest_training_outcome_wave": 11,
+      "oof_start": 12,
+      "oof_end": 14,
+      "train_n": 36500,
+      "oof_n": 14434,
+      "feature_n": 138
+    },
+    {
+      "train_end": 13,
+      "latest_training_outcome_wave": 14,
+      "oof_start": 15,
+      "oof_end": 17,
+      "train_n": 49879,
+      "oof_n": 15064,
+      "feature_n": 138
+    },
+    {
+      "train_end": 16,
+      "latest_training_outcome_wave": 17,
+      "oof_start": 18,
+      "oof_end": 20,
+      "train_n": 64860,
+      "oof_n": 16621,
+      "feature_n": 138
+    }
+  ],
+  "base_fit_count": 20,
+  "probability_comparisons_pass": true,
+  "metric_comparisons_pass": true,
+  "threshold_comparisons_pass": true
+}

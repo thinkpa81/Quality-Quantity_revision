@@ -1,0 +1,8 @@
+{
+  "selected_all": 6522,
+  "selected_age65plus": 2635,
+  "share_selected_age65plus": 0.4040171726464275,
+  "true_positives_age65plus": 490,
+  "precision_age65plus": 0.1859582542694497,
+  "source": "subgroup_metrics.csv; CatBoost Platt common threshold"
+}

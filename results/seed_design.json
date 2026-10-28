@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035
+  ],
+  "model_threads": 3,
+  "same_threads_as_primary": true,
+  "stochastic_models": [
+    "random_forest",
+    "xgboost",
+    "catboost"
+  ],
+  "reused_deterministic_model": "logistic",
+  "refitted_stages": [
+    "full training",
+    "four forward OOF blocks",
+    "meta learner",
+    "validation calibration and thresholds"
+  ],
+  "interpretation": "Descriptive optimization randomness conditional on fixed data and development protocol; not confidence intervals for sampling or protocol-selection uncertainty"
+}

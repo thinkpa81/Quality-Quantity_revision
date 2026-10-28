@@ -1,0 +1,10 @@
+{
+  "probability_input_intercept": -3.253323735616758,
+  "all_coefficients_positive": true,
+  "mathematical_minimum_over_unit_cube": 0.037207637081670956,
+  "observed_minimum": 0.03830217167714985,
+  "logit_input_clip": 1e-06,
+  "meta_C": 1,
+  "meta_standardization": false,
+  "interpretation": "Exploratory scale sensitivity; no primary model replacement based on test scores"
+}

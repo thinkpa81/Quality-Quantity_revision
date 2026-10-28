@@ -1,0 +1,55 @@
+document,table,key,title,numerical_source
+01_Main_Manuscript_Revised.docx,1,protocol,Linked decisions and audit requirements,protocol.json
+01_Main_Manuscript_Revised.docx,2,sample,Chronological sample and outcome horizon,sample_by_split.csv
+01_Main_Manuscript_Revised.docx,3,primary,Raw primary single-refit performance with 95% person-cluster intervals,model_calibration_metrics.csv; primary_cluster_confidence_intervals.csv
+01_Main_Manuscript_Revised.docx,4,calibration,Raw and validation-calibrated outputs and calibration diagnostics,model_calibration_metrics.csv; primary_cluster_confidence_intervals.csv
+01_Main_Manuscript_Revised.docx,5,sensitivities,Selected CatBoost refits: raw held-out performance,sensitivity_models.csv
+02_Supplementary_Information_Revised.docx,S1,codebook,Source fields used to adjudicate employment states,outcome_codebook_extract.csv
+02_Supplementary_Information_Revised.docx,S2,destinations,Outcome destination by baseline wave,destination_by_wave.csv
+02_Supplementary_Information_Revised.docx,S3,reconciliation,Reconciliation with a detailed-status-only rule,submitted_revised_label_reconciliation.csv
+02_Supplementary_Information_Revised.docx,S4,flow,Baseline risk-set and follow-up flow,sample_flow_by_wave.csv
+02_Supplementary_Information_Revised.docx,S5,feature_blocks,Candidate and eligible feature counts,feature_registry.csv
+02_Supplementary_Information_Revised.docx,S6,feature_manifest,Complete candidate feature registry,feature_registry.csv; source_variable_mapping.csv
+02_Supplementary_Information_Revised.docx,S7,configurations,Primary configurations,common.py; fit_models.py
+02_Supplementary_Information_Revised.docx,S8,forward_folds,Forward out-of-fold availability and coverage,forward_folds.csv
+02_Supplementary_Information_Revised.docx,S9,stack_coefficients,Meta-learner coefficients,forward_stack_coefficients.csv; forward_stack_balanced_coefficients.csv
+02_Supplementary_Information_Revised.docx,S10,stack_sensitivity,"Forward, shuffled, and class-balanced stacks",model_calibration_metrics.csv
+02_Supplementary_Information_Revised.docx,S11,primary_ci,Complete metric intervals for raw and calibrated models,primary_cluster_confidence_intervals.csv
+02_Supplementary_Information_Revised.docx,S12,paired_contrasts,Paired person-cluster differences,paired_cluster_model_contrasts.csv
+02_Supplementary_Information_Revised.docx,S13,wave_metrics,Per-wave raw and Platt performance,test_wave_metrics.csv
+02_Supplementary_Information_Revised.docx,S14,wave_ci,Per-wave cluster intervals for ranking and calibration,per_wave_cluster_confidence_intervals.csv
+02_Supplementary_Information_Revised.docx,S15,calibration_windows,Alternative Platt calibration windows,calibration_window_sensitivity.csv
+02_Supplementary_Information_Revised.docx,S16,rolling,Earlier expanding-origin tests of all five learners,all_model_origins.csv
+02_Supplementary_Information_Revised.docx,S17,selection,Retained versus missing-follow-up baseline characteristics,followup_selection_baseline.csv
+02_Supplementary_Information_Revised.docx,S18,prevalence_bounds,Worst-case eligible-baseline prevalence bounds,followup_selection_baseline.csv
+02_Supplementary_Information_Revised.docx,S19,cohorts,Origin and refreshment bookkeeping categories,cohort_distribution.csv
+02_Supplementary_Information_Revised.docx,S20,endpoints,Endpoint-specific and missing-detail refits,sensitivity_models.csv
+02_Supplementary_Information_Revised.docx,S21,destination_scores,Primary CatBoost probabilities restricted to one destination,destination_specific_scores.csv
+02_Supplementary_Information_Revised.docx,S22,other_sensitivities,"Representation, age, and boundary sensitivities",sensitivity_models.csv
+02_Supplementary_Information_Revised.docx,S23,tuning,Disclosed finite validation search,tuning_validation.csv
+02_Supplementary_Information_Revised.docx,S24,tuned_results,Selected configurations and class-balanced logistic sensitivity,sensitivity_models.csv
+02_Supplementary_Information_Revised.docx,S25,overlap,Person overlap across chronological partitions,person_overlap.csv
+02_Supplementary_Information_Revised.docx,S26,disjoint_sample,Supervised samples in the genuinely disjoint refit,person_disjoint_sample.csv
+02_Supplementary_Information_Revised.docx,S27,person_results,New/seen subset scores and disjoint refit,new_person_subset_metrics.csv; sensitivity_models.csv
+02_Supplementary_Information_Revised.docx,S28,age_groups,Age contributions and CatBoost operating-point diagnostics,subgroup_metrics.csv
+02_Supplementary_Information_Revised.docx,S29,gender,Gender diagnostics at the shared CatBoost Platt threshold,subgroup_metrics.csv; selected_thresholds.csv
+02_Supplementary_Information_Revised.docx,S30,region,Region diagnostics at the shared CatBoost Platt threshold,subgroup_metrics.csv; selected_thresholds.csv
+02_Supplementary_Information_Revised.docx,S31,survey,Integrated-2018 cross-sectional weighted sensitivity,survey_weighted_metrics.csv
+02_Supplementary_Information_Revised.docx,S32,shap_stability,Sample stability of the primary-model SHAP ranking,shap_rank_stability.csv
+02_Supplementary_Information_Revised.docx,S33,shap_features,Twenty largest mean absolute SHAP contributions,shap_primary_importance.csv
+02_Supplementary_Information_Revised.docx,S34,shap_groups,Grouped signed-SHAP summaries,shap_group_attributions.csv
+02_Supplementary_Information_Revised.docx,S35,utility,CatBoost utility from validation-selected scenario thresholds,utility_scenarios.csv
+02_Supplementary_Information_Revised.docx,S36,reproduction_map,Reproduction stages and output roles,README.md; run_pipeline.py
+02_Supplementary_Information_Revised.docx,S37,framework_crosswalk,Relationship to established reporting and appraisal frameworks,Collins et al. (2024); Moons et al. (2025); protocol.json
+02_Supplementary_Information_Revised.docx,S38,period_variation,Eligible calendar flags with zero training variation,feature_variation.csv
+02_Supplementary_Information_Revised.docx,S39,drift_standardized,Age–cohort standardisation on shared support,drift_standardization.csv; drift_strata.csv
+02_Supplementary_Information_Revised.docx,S40,drift_decomposition,Exact descriptive decomposition of prevalence changes,drift_decomposition.csv
+02_Supplementary_Information_Revised.docx,S41,origin_contrasts,Paired earlier-origin comparisons of the leading learners,origin_contrasts.csv
+02_Supplementary_Information_Revised.docx,S42,seed_summary,Ten-seed distributions for CatBoost and forward stacking,seed_metrics.csv; seed_summary.csv
+02_Supplementary_Information_Revised.docx,S43,seed_contrasts,Paired ten-seed model and calendar contrasts,seed_contrasts.csv
+02_Supplementary_Information_Revised.docx,S44,logit_stack,Meta-input scale sensitivity,logit_stack.csv; model_calibration_metrics.csv; logit_stack_contrasts.csv
+02_Supplementary_Information_Revised.docx,S45,stack_lower_tail,Low-score behaviour of the two meta-input scales,stack_lower_tail.csv
+02_Supplementary_Information_Revised.docx,S46,matched_below65,Same-test-sample comparison below age 65,matched_below65.csv; matched_below65_contrasts.csv
+02_Supplementary_Information_Revised.docx,S47,disjoint_groups,Same disjoint model by assignment and prior training eligibility,disjoint_history_groups.csv; disjoint_history_contrasts.csv; disjoint_history_design.json
+02_Supplementary_Information_Revised.docx,S48,household_contrasts,Household-component paired uncertainty sensitivity,household_component_contrasts.csv
+02_Supplementary_Information_Revised.docx,S49,raw_thresholds,Validation-selected cutoffs expressed on the raw probability scale,calibration_raw_thresholds.csv

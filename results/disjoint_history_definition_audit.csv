@@ -1,0 +1,10 @@
+﻿arm,eligible_training_history,any_panel_history,rows,people,events
+held_out,False,False,1587,683,178.0
+held_out,False,True,385,180,41.0
+held_out,True,True,2043,809,170.0
+training,False,False,7110,3014,620.0
+training,False,True,1778,863,227.0
+training,True,True,10025,3917,766.0
+validation,False,False,1480,638,149.0
+validation,False,True,381,188,65.0
+validation,True,True,2274,895,179.0

@@ -1,0 +1,15 @@
+# Python 3.12; exact versions used for the revised benchmark
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+scikit-learn==1.9.1
+catboost==1.2.10
+xgboost==3.4.1
+matplotlib==3.11.2
+joblib==1.6.0
+python-calamine==0.9.0
+openpyxl==3.1.5
+xlrd==2.0.1
+pypdf==6.10.0
+python-docx==1.2.0
+Jinja2==3.1.6

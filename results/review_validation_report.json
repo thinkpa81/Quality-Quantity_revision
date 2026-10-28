@@ -1,0 +1,669 @@
+{
+  "status": "PASS",
+  "checks_passed": 71,
+  "inference_scope": "Conditional on the same fitted model and realised hash assignment; no causal overlap or redevelopment claim",
+  "checks": [
+    {
+      "check": "fixed_model_hash",
+      "status": "PASS",
+      "detail": "313a90dcc41df9e70be5a59986705f221d57ee84eefcde1c4e38755f6c4d4b17"
+    },
+    {
+      "check": "test_key_uniqueness",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "eligibility_definition",
+      "status": "PASS",
+      "detail": "Observed labelled wage-employed baseline at waves 1-20"
+    },
+    {
+      "check": "alternative_interview_definition",
+      "status": "PASS",
+      "detail": "Any person-file interview at waves 1-20"
+    },
+    {
+      "check": "history_constant_within_person",
+      "status": "PASS",
+      "detail": "History and assignment remain person-level"
+    },
+    {
+      "check": "actual_fit_membership",
+      "status": "PASS",
+      "detail": "Only training-arm eligible people entered fitting"
+    },
+    {
+      "check": "no_history_is_negative_control",
+      "status": "PASS",
+      "detail": "No person in either no-eligible-history arm entered supervised training"
+    },
+    {
+      "check": "group_metrics_0",
+      "status": "PASS",
+      "detail": [
+        "all",
+        "nan",
+        "training",
+        "raw",
+        18913
+      ]
+    },
+    {
+      "check": "group_metrics_1",
+      "status": "PASS",
+      "detail": [
+        "all",
+        "nan",
+        "training",
+        "platt",
+        18913
+      ]
+    },
+    {
+      "check": "group_metrics_2",
+      "status": "PASS",
+      "detail": [
+        "all",
+        "nan",
+        "held_out",
+        "raw",
+        4015
+      ]
+    },
+    {
+      "check": "group_metrics_3",
+      "status": "PASS",
+      "detail": [
+        "all",
+        "nan",
+        "held_out",
+        "platt",
+        4015
+      ]
+    },
+    {
+      "check": "group_metrics_4",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "True",
+        "training",
+        "raw",
+        10025
+      ]
+    },
+    {
+      "check": "group_metrics_5",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "True",
+        "training",
+        "platt",
+        10025
+      ]
+    },
+    {
+      "check": "group_metrics_6",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "True",
+        "held_out",
+        "raw",
+        2043
+      ]
+    },
+    {
+      "check": "group_metrics_7",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "True",
+        "held_out",
+        "platt",
+        2043
+      ]
+    },
+    {
+      "check": "group_metrics_8",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "False",
+        "training",
+        "raw",
+        8888
+      ]
+    },
+    {
+      "check": "group_metrics_9",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "False",
+        "training",
+        "platt",
+        8888
+      ]
+    },
+    {
+      "check": "group_metrics_10",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "False",
+        "held_out",
+        "raw",
+        1972
+      ]
+    },
+    {
+      "check": "group_metrics_11",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "False",
+        "held_out",
+        "platt",
+        1972
+      ]
+    },
+    {
+      "check": "group_metrics_12",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "True",
+        "training",
+        "raw",
+        11803
+      ]
+    },
+    {
+      "check": "group_metrics_13",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "True",
+        "training",
+        "platt",
+        11803
+      ]
+    },
+    {
+      "check": "group_metrics_14",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "True",
+        "held_out",
+        "raw",
+        2428
+      ]
+    },
+    {
+      "check": "group_metrics_15",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "True",
+        "held_out",
+        "platt",
+        2428
+      ]
+    },
+    {
+      "check": "group_metrics_16",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "False",
+        "training",
+        "raw",
+        7110
+      ]
+    },
+    {
+      "check": "group_metrics_17",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "False",
+        "training",
+        "platt",
+        7110
+      ]
+    },
+    {
+      "check": "group_metrics_18",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "False",
+        "held_out",
+        "raw",
+        1587
+      ]
+    },
+    {
+      "check": "group_metrics_19",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "False",
+        "held_out",
+        "platt",
+        1587
+      ]
+    },
+    {
+      "check": "group_reconstruction_eligible_training_history_held_out",
+      "status": "PASS",
+      "detail": 4015
+    },
+    {
+      "check": "group_reconstruction_eligible_training_history_training",
+      "status": "PASS",
+      "detail": 18913
+    },
+    {
+      "check": "group_reconstruction_any_panel_history_held_out",
+      "status": "PASS",
+      "detail": 4015
+    },
+    {
+      "check": "group_reconstruction_any_panel_history_training",
+      "status": "PASS",
+      "detail": 18913
+    },
+    {
+      "check": "contrast_0",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_1",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_2",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_3",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_4",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_5",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_6",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_7",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_8",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_9",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_10",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_11",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_12",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_13",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_14",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_15",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "eligible_or_observed_history",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_16",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "without_history",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_17",
+      "status": "PASS",
+      "detail": [
+        "eligible_training_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_18",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_19",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_20",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_21",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_22",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_23",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_24",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_25",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_26",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "raw",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_27",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_28",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_29",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "roc_auc"
+      ]
+    },
+    {
+      "check": "contrast_30",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_31",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_32",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "pr_auc"
+      ]
+    },
+    {
+      "check": "contrast_33",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "eligible_or_observed_history",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_34",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "without_history",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "contrast_35",
+      "status": "PASS",
+      "detail": [
+        "any_panel_history",
+        "history_minus_no_history_gap",
+        "platt",
+        "brier"
+      ]
+    },
+    {
+      "check": "bootstrap_gap_algebra",
+      "status": "PASS",
+      "detail": "Every draw preserves the difference between gaps"
+    },
+    {
+      "check": "all_seed_contrast_recalculations",
+      "status": "PASS",
+      "detail": 50
+    },
+    {
+      "check": "age65_share_and_precision",
+      "status": "PASS",
+      "detail": {
+        "selected_all": 6522,
+        "selected_age65plus": 2635,
+        "share_selected_age65plus": 0.4040171726464275,
+        "true_positives_age65plus": 490,
+        "precision_age65plus": 0.1859582542694497,
+        "source": "subgroup_metrics.csv; CatBoost Platt common threshold"
+      }
+    },
+    {
+      "check": "descriptive_module_names",
+      "status": "PASS",
+      "detail": "All source files parse; no legacy numbered-module imports"
+    }
+  ]
+}

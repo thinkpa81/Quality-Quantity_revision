@@ -1,0 +1,5 @@
+train_start,train_end,latest_training_outcome_wave,oof_start,oof_end,train_n,oof_n,feature_n
+1,7,8,9,11,24806,11846,136
+1,10,11,12,14,36500,14434,138
+1,13,14,15,17,49879,15064,138
+1,16,17,18,20,64860,16621,138

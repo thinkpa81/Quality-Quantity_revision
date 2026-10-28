@@ -1,0 +1,564 @@
+{
+  "status": "PASS",
+  "checks_passed": 88,
+  "checks": [
+    {
+      "check": "unique_person_wave",
+      "status": "PASS",
+      "detail": 417823
+    },
+    {
+      "check": "analysis_sample",
+      "status": "PASS",
+      "detail": {
+        "rows": 139566,
+        "people": 19339,
+        "events": 15171
+      }
+    },
+    {
+      "check": "test_sample",
+      "status": "PASS",
+      "detail": {
+        "rows": 27063,
+        "people": 11187,
+        "events": 2395
+      }
+    },
+    {
+      "check": "only_wage_baselines",
+      "status": "PASS",
+      "detail": {
+        "wage": 139566
+      }
+    },
+    {
+      "check": "absent_followup_not_positive",
+      "status": "PASS",
+      "detail": 20536
+    },
+    {
+      "check": "administrative_vs_missing",
+      "status": "PASS",
+      "detail": "9556 administrative; 10980 eligible missing"
+    },
+    {
+      "check": "questionnaire_precedes_last_job",
+      "status": "PASS",
+      "detail": 188155
+    },
+    {
+      "check": "test_missing_detail_routing",
+      "status": "PASS",
+      "detail": "2006 of 2395 test positives independently routed as nonemployment"
+    },
+    {
+      "check": "adjacent_outcome_identity",
+      "status": "PASS",
+      "detail": 139566
+    },
+    {
+      "check": "feature_allowlist",
+      "status": "PASS",
+      "detail": "138 documented predictors; identifiers and future fields excluded"
+    },
+    {
+      "check": "forward_oof_information_cutoff",
+      "status": "PASS",
+      "detail": [
+        {
+          "train_end": 7,
+          "latest_training_outcome_wave": 8,
+          "oof_start": 9
+        },
+        {
+          "train_end": 10,
+          "latest_training_outcome_wave": 11,
+          "oof_start": 12
+        },
+        {
+          "train_end": 13,
+          "latest_training_outcome_wave": 14,
+          "oof_start": 15
+        },
+        {
+          "train_end": 16,
+          "latest_training_outcome_wave": 17,
+          "oof_start": 18
+        }
+      ]
+    },
+    {
+      "check": "oof_cohort",
+      "status": "PASS",
+      "detail": 57965
+    },
+    {
+      "check": "history_counts_use_prior_states",
+      "status": "PASS",
+      "detail": 197
+    },
+    {
+      "check": "genuine_person_disjoint_refit",
+      "status": "PASS",
+      "detail": [
+        60262,
+        3970,
+        4015
+      ]
+    },
+    {
+      "check": "disjoint_sample_counts",
+      "status": "PASS",
+      "detail": [
+        8901,
+        1668,
+        1672
+      ]
+    },
+    {
+      "check": "finite_probability_logistic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_logistic",
+      "status": "PASS",
+      "detail": 0.11990913804503903
+    },
+    {
+      "check": "metric_source_logistic",
+      "status": "PASS",
+      "detail": "logistic"
+    },
+    {
+      "check": "finite_probability_logistic_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_logistic_platt",
+      "status": "PASS",
+      "detail": 0.13213680555563317
+    },
+    {
+      "check": "metric_source_logistic_platt",
+      "status": "PASS",
+      "detail": "logistic_platt"
+    },
+    {
+      "check": "finite_probability_logistic_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_logistic_isotonic",
+      "status": "PASS",
+      "detail": 0.1443609022556391
+    },
+    {
+      "check": "metric_source_logistic_isotonic",
+      "status": "PASS",
+      "detail": "logistic_isotonic"
+    },
+    {
+      "check": "finite_probability_random_forest",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_random_forest",
+      "status": "PASS",
+      "detail": 0.14515177132821447
+    },
+    {
+      "check": "metric_source_random_forest",
+      "status": "PASS",
+      "detail": "random_forest"
+    },
+    {
+      "check": "finite_probability_random_forest_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_random_forest_platt",
+      "status": "PASS",
+      "detail": 0.1383143887747888
+    },
+    {
+      "check": "metric_source_random_forest_platt",
+      "status": "PASS",
+      "detail": "random_forest_platt"
+    },
+    {
+      "check": "finite_probability_random_forest_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_random_forest_isotonic",
+      "status": "PASS",
+      "detail": 0.14938225383751405
+    },
+    {
+      "check": "metric_source_random_forest_isotonic",
+      "status": "PASS",
+      "detail": "random_forest_isotonic"
+    },
+    {
+      "check": "finite_probability_xgboost",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_xgboost",
+      "status": "PASS",
+      "detail": 0.1151820570230484
+    },
+    {
+      "check": "metric_source_xgboost",
+      "status": "PASS",
+      "detail": "xgboost"
+    },
+    {
+      "check": "finite_probability_xgboost_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_xgboost_platt",
+      "status": "PASS",
+      "detail": 0.11685022179621884
+    },
+    {
+      "check": "metric_source_xgboost_platt",
+      "status": "PASS",
+      "detail": "xgboost_platt"
+    },
+    {
+      "check": "finite_probability_xgboost_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_xgboost_isotonic",
+      "status": "PASS",
+      "detail": 0.14285714285714285
+    },
+    {
+      "check": "metric_source_xgboost_isotonic",
+      "status": "PASS",
+      "detail": "xgboost_isotonic"
+    },
+    {
+      "check": "finite_probability_catboost",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_catboost",
+      "status": "PASS",
+      "detail": 0.14357684053302272
+    },
+    {
+      "check": "metric_source_catboost",
+      "status": "PASS",
+      "detail": "catboost"
+    },
+    {
+      "check": "finite_probability_catboost_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_catboost_platt",
+      "status": "PASS",
+      "detail": 0.1347991549849266
+    },
+    {
+      "check": "metric_source_catboost_platt",
+      "status": "PASS",
+      "detail": "catboost_platt"
+    },
+    {
+      "check": "finite_probability_catboost_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_catboost_isotonic",
+      "status": "PASS",
+      "detail": 0.14585274930102518
+    },
+    {
+      "check": "metric_source_catboost_isotonic",
+      "status": "PASS",
+      "detail": "catboost_isotonic"
+    },
+    {
+      "check": "finite_probability_forward_stack",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack",
+      "status": "PASS",
+      "detail": 0.10484567858323117
+    },
+    {
+      "check": "metric_source_forward_stack",
+      "status": "PASS",
+      "detail": "forward_stack"
+    },
+    {
+      "check": "finite_probability_forward_stack_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack_platt",
+      "status": "PASS",
+      "detail": 0.11597803291417605
+    },
+    {
+      "check": "metric_source_forward_stack_platt",
+      "status": "PASS",
+      "detail": "forward_stack_platt"
+    },
+    {
+      "check": "finite_probability_forward_stack_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack_isotonic",
+      "status": "PASS",
+      "detail": 0.1518987341772152
+    },
+    {
+      "check": "metric_source_forward_stack_isotonic",
+      "status": "PASS",
+      "detail": "forward_stack_isotonic"
+    },
+    {
+      "check": "finite_probability_forward_stack_balanced",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack_balanced",
+      "status": "PASS",
+      "detail": 0.5120379206429285
+    },
+    {
+      "check": "metric_source_forward_stack_balanced",
+      "status": "PASS",
+      "detail": "forward_stack_balanced"
+    },
+    {
+      "check": "finite_probability_forward_stack_balanced_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack_balanced_platt",
+      "status": "PASS",
+      "detail": 0.11575289105269222
+    },
+    {
+      "check": "metric_source_forward_stack_balanced_platt",
+      "status": "PASS",
+      "detail": "forward_stack_balanced_platt"
+    },
+    {
+      "check": "finite_probability_forward_stack_balanced_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_forward_stack_balanced_isotonic",
+      "status": "PASS",
+      "detail": 0.15073529411764705
+    },
+    {
+      "check": "metric_source_forward_stack_balanced_isotonic",
+      "status": "PASS",
+      "detail": "forward_stack_balanced_isotonic"
+    },
+    {
+      "check": "finite_probability_shuffled_stack",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_shuffled_stack",
+      "status": "PASS",
+      "detail": 0.11939086902501789
+    },
+    {
+      "check": "metric_source_shuffled_stack",
+      "status": "PASS",
+      "detail": "shuffled_stack"
+    },
+    {
+      "check": "finite_probability_shuffled_stack_platt",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_shuffled_stack_platt",
+      "status": "PASS",
+      "detail": 0.10868310168976983
+    },
+    {
+      "check": "metric_source_shuffled_stack_platt",
+      "status": "PASS",
+      "detail": "shuffled_stack_platt"
+    },
+    {
+      "check": "finite_probability_shuffled_stack_isotonic",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "validation_threshold_shuffled_stack_isotonic",
+      "status": "PASS",
+      "detail": 0.1484814398200225
+    },
+    {
+      "check": "metric_source_shuffled_stack_isotonic",
+      "status": "PASS",
+      "detail": "shuffled_stack_isotonic"
+    },
+    {
+      "check": "weighted_tied_metric_independent_validation",
+      "status": "PASS",
+      "detail": "Fast bootstrap metrics agree with sklearn/direct definitions, including ties and zero weights"
+    },
+    {
+      "check": "bootstrap_replicates",
+      "status": "PASS",
+      "detail": {
+        "replicates": 1000,
+        "models": 15,
+        "rows": 15000
+      }
+    },
+    {
+      "check": "finite_primary_intervals",
+      "status": "PASS",
+      "detail": 120
+    },
+    {
+      "check": "paired_contrasts_reproduce",
+      "status": "PASS",
+      "detail": 56
+    },
+    {
+      "check": "utility_arithmetic_single_source",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "check": "utility_count_identity",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "check": "logistic_convergence",
+      "status": "PASS",
+      "detail": [
+        {
+          "model": "forward_16_logistic",
+          "iterations": 845,
+          "limit": 2000
+        },
+        {
+          "model": "forward_13_logistic",
+          "iterations": 814,
+          "limit": 2000
+        },
+        {
+          "model": "shuffled_0_logistic",
+          "iterations": 880,
+          "limit": 2000
+        },
+        {
+          "model": "balanced_logistic",
+          "iterations": 1421,
+          "limit": 2000
+        },
+        {
+          "model": "rolling_14_logistic",
+          "iterations": 857,
+          "limit": 2000
+        },
+        {
+          "model": "shuffled_3_logistic",
+          "iterations": 885,
+          "limit": 2000
+        },
+        {
+          "model": "logistic",
+          "iterations": 953,
+          "limit": 2000
+        },
+        {
+          "model": "rolling_17_logistic",
+          "iterations": 882,
+          "limit": 2000
+        },
+        {
+          "model": "shuffled_1_logistic",
+          "iterations": 863,
+          "limit": 2000
+        },
+        {
+          "model": "shuffled_2_logistic",
+          "iterations": 888,
+          "limit": 2000
+        },
+        {
+          "model": "forward_7_logistic",
+          "iterations": 617,
+          "limit": 2000
+        },
+        {
+          "model": "tuned_logistic_2",
+          "iterations": 2072,
+          "limit": 10000
+        },
+        {
+          "model": "tuned_logistic_0",
+          "iterations": 578,
+          "limit": 2000
+        },
+        {
+          "model": "forward_10_logistic",
+          "iterations": 712,
+          "limit": 2000
+        }
+      ]
+    },
+    {
+      "check": "core_raw_coverage",
+      "status": "PASS",
+      "detail": "All 54 required inputs available"
+    },
+    {
+      "check": "complete_reported_source_audit",
+      "status": "PASS",
+      "detail": "All 83 reported file identities match the original source manifest"
+    },
+    {
+      "check": "raw_checksums",
+      "status": "PASS",
+      "detail": {
+        "fully_read_files": 83,
+        "unused_unavailable": "eklips27w.xlsx"
+      }
+    }
+  ],
+  "scope": "Conditional fitted-model, observed-follow-up benchmark; unused work-history file unavailable; no full survey-design inference"
+}

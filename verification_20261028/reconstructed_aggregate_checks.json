@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "submitted_revised_label_reconciliation.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "raw_file_audit.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "household_duplicate_audit.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "outcome_codebook_extract.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "feature_registry.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "sample_by_split.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "cohort_distribution.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "destination_by_wave.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "household_join_audit.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "sample_flow_by_wave.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "source_variable_mapping.csv",
+      "parsed_values_exact": true,
+      "error": null
+    },
+    {
+      "file": "submitted_positive_class_audit.csv",
+      "parsed_values_exact": true,
+      "error": null
+    }
+  ],
+  "count": 12,
+  "serialization_note": "CSV byte hashes can differ because the retained package normalised file encoding or line endings; comparisons use parsed fields and dtypes."
+}

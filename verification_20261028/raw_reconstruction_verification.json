@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "date": "2026-10-28",
+  "source_audited_files": 83,
+  "source_listed_files": 84,
+  "modelling_inputs": 54,
+  "cache_origin": "Fresh workbook reads in this verification session; previous-release extraction caches were not used",
+  "datasets": [
+    {
+      "dataset": "panel",
+      "rows": 417823,
+      "columns": 122,
+      "full_frame_exact_match": true,
+      "reconstructed_sha256": "8fbf2a5de195b0a25daa050e08552f88e0164e7078ba4b64bb155961edfb6ced",
+      "reference_sha256": "8fbf2a5de195b0a25daa050e08552f88e0164e7078ba4b64bb155961edfb6ced"
+    },
+    {
+      "dataset": "risk",
+      "rows": 160102,
+      "columns": 279,
+      "full_frame_exact_match": true,
+      "reconstructed_sha256": "68a171e0cd7ec48bb1b08ec6bb26c8f15d4993caa935c48aee79b1562cce9c83",
+      "reference_sha256": "68a171e0cd7ec48bb1b08ec6bb26c8f15d4993caa935c48aee79b1562cce9c83"
+    },
+    {
+      "dataset": "analysis",
+      "rows": 139566,
+      "columns": 279,
+      "full_frame_exact_match": true,
+      "reconstructed_sha256": "f92b5f006795de3a283a5b0dc71f999e4f330727e5ad948c2eddfe839e5049a9",
+      "reference_sha256": "f92b5f006795de3a283a5b0dc71f999e4f330727e5ad948c2eddfe839e5049a9"
+    }
+  ],
+  "execution_note": "Workbook reads originally used3workers; final assembly reuses only fresh current-session extraction cache with sequential map after multiprocessing IPC stalled."
+}

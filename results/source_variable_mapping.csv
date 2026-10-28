@@ -1,0 +1,85 @@
+concept,source_type,source_pattern,description
+pid,p,^pid$,person identifier
+gender_raw,p,p\d{2}0101$,gender
+relation_to_head_raw,p,p\d{2}0102$,relation to household head
+birth_year_raw,p,p\d{2}0104$,birth year
+age_reported_raw,p,p\d{2}0107$,reported age
+region_raw,p,p\d{2}0121$,residence region
+education_level_raw,p,p\d{2}0110$,education level
+education_completion_raw,p,p\d{2}0111$,schooling completion
+education_grade_raw,p,p\d{2}0112$,education grade
+major_field_raw,p,p\d{2}0113$,major field
+marital_status_raw,p,p\d{2}5501$,marital status
+health_status_raw,p,p\d{2}6101$,self-rated health
+health_change_raw,p,p\d{2}6102$,health change relative to one year earlier
+employment_status_raw,p,p\d{2}0201$,"questionnaire type: 1 employed, 2 nonemployed"
+employment_type_raw,p,p\d{2}0211$,employment type
+family_work_help_raw,p,p\d{2}0212$,unpaid family work
+employee_status_raw,p,p\d{2}0314$,employment status category
+work_type_raw,p,p\d{2}0315$,work type
+job_position_raw,p,p\d{2}0316$,job position
+regular_worker_raw,p,p\d{2}0317$,regular worker indicator
+business_place_raw,p,p\d{2}0318$,description of place of business
+workplace_registered_raw,p,p\d{2}0319$,business registration
+job_start_year_raw,p,p\d{2}0301$,current job start year
+job_start_month_raw,p,p\d{2}0302$,current job start month
+job_start_day_raw,p,p\d{2}0303$,current job start day
+industry_raw,p,p\d{2}034[012]$,industry code across KSIC revisions
+occupation_raw,p,p\d{2}035[012]$,occupation code across KSCO revisions
+workplace_type_raw,p,p\d{2}0401$,workplace type
+firm_size_raw,p,p\d{2}0402$,firm size
+firm_size_band_raw,p,p\d{2}0403$,firm-size category
+worksite_size_raw,p,p\d{2}0405$,worksite size
+worksite_size_band_raw,p,p\d{2}0406$,worksite-size category
+contract_period_raw,p,p\d{2}0501$,fixed contract period
+written_contract_raw,p,p\d{2}0509$,written work contract
+expected_duration_raw,p,p\d{2}0603$,expected continued employment duration
+voluntary_work_form_raw,p,p\d{2}0614$,voluntary or involuntary work form
+fixed_work_hours_raw,p,p\d{2}1003$,fixed work hours
+weekly_hours_raw,p,p\d{2}1004$,average weekly working hours
+weekly_work_days_raw,p,p\d{2}1005$,average weekly working days
+regular_weekly_hours_raw,p,p\d{2}1006$,regular weekly work hours
+regular_weekly_days_raw,p,p\d{2}1007$,regular weekly work days
+overtime_work_raw,p,p\d{2}1011$,overtime work
+overtime_hours_raw,p,p\d{2}1012$,reported overtime hours
+overtime_days_raw,p,p\d{2}1013$,reported overtime days
+overtime_pay_raw,p,p\d{2}1018$,monthly overtime payment
+pay_schedule_raw,p,p\d{2}1601$,wage pay schedule
+pay_method_raw,p,p\d{2}1602$,wage determination method
+performance_pay_raw,p,p\d{2}1621$,performance-based pay
+monthly_wage_raw,p,p\d{2}1642$,average monthly wage
+monthly_tax_deduction_raw,p,p\d{2}1643$,monthly tax deduction
+starting_monthly_wage_raw,p,p\d{2}1652$,monthly wage when starting job
+annual_earned_income_raw,p,p\d{2}1702$,annual earned income
+aftertax_earned_income_raw,p,p\d{2}1703$,after-tax annual earned income
+national_pension_raw,p,p\d{2}2101$,national pension coverage
+health_insurance_raw,p,p\d{2}2103$,workplace health insurance coverage
+employment_insurance_raw,p,p\d{2}2104$,employment insurance
+industrial_accident_insurance_raw,p,p\d{2}2105$,industrial accident compensation insurance
+current_employment_insurance_raw,p,p\d{2}2109$,current employment insurance coverage
+union_exists_raw,p,p\d{2}2501$,union exists at main job
+union_member_raw,p,p\d{2}2504$,union membership
+shift_work_raw,p,p\d{2}2601$,shift work
+job_sat_wage_raw,p,p\d{2}4311$,satisfaction with wage or earnings
+job_sat_stability_raw,p,p\d{2}4312$,satisfaction with employment stability
+job_sat_content_raw,p,p\d{2}4313$,satisfaction with work content
+job_sat_environment_raw,p,p\d{2}4314$,satisfaction with work environment
+job_sat_hours_raw,p,p\d{2}4315$,satisfaction with work hours
+job_sat_development_raw,p,p\d{2}4316$,satisfaction with personal development
+job_sat_relationships_raw,p,p\d{2}4317$,satisfaction with workplace relationships
+job_sat_promotion_raw,p,p\d{2}4318$,satisfaction with promotion fairness
+job_sat_welfare_raw,p,p\d{2}4319$,satisfaction with corporate welfare
+job_sat_overall_workplace_raw,p,p\d{2}4321$,overall satisfaction with workplace
+job_sat_overall_work_raw,p,p\d{2}4322$,overall satisfaction with work itself
+household_size_raw,h,h\d{2}0150$,household size
+housing_tenure_raw,h,h\d{2}1406$,housing tenure
+housing_type_raw,h,h\d{2}1407$,housing type
+housing_deposit_raw,h,h\d{2}1413$,housing deposit
+housing_rent_raw,h,h\d{2}1414$,monthly rent
+household_labor_income_raw,h,h\d{2}2102$,previous-year household earned income
+household_monthly_earned_income_raw,h,h\d{2}2202$,previous-month household earned income
+household_medical_cost_raw,h,h\d{2}2318$,previous-year household medical cost
+household_monthly_savings_raw,h,h\d{2}2402$,average monthly household savings
+household_bank_savings_raw,h,h\d{2}2562$,bank savings amount
+household_debt_exists_raw,h,h\d{2}2632$,household debt exists
+household_financial_condition_raw,h,h\d{2}2705$,current household financial condition

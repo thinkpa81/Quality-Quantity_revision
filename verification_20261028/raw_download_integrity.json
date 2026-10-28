@@ -1,0 +1,505 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "file": "eklips01h.xlsx",
+      "bytes": 1509440,
+      "sha256": "6d9ed52faa02fb0c730cea089cbf1a3eff52e71873084e187858b75c7ed8fdf4",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips01p.xlsx",
+      "bytes": 4447411,
+      "sha256": "3281fc7cc471384b15a764d61c03ef8714886ac0e17f1c2f75761991e518a350",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips02h.xlsx",
+      "bytes": 1932778,
+      "sha256": "029bf363ebc2d3d17042cf91c11611188dffb6f506cce28a5d2fe15dcc9fb4f0",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips02p.xlsx",
+      "bytes": 3409682,
+      "sha256": "60f5282772d2595a8435a280281d63cd30c541e0b22de17615ea2eec784ecd95",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips03a.xlsx",
+      "bytes": 441809,
+      "sha256": "7bdaa1a616ab8c41ef510deb54cb6eb35e80fdae7d1a62fab427e99b86eeeed1",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips03h.xlsx",
+      "bytes": 1854581,
+      "sha256": "2cf7d13769482e92df2fce8e78af60983ed3c2dbc5828ee24552d83cf1fb0fda",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips03p.xlsx",
+      "bytes": 3720466,
+      "sha256": "fc992013c5b833eb57092b95dbf0cbfa12063890789e475c879f8a17b60cdfc2",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips04a.xlsx",
+      "bytes": 1646223,
+      "sha256": "70db69b7d697ecb8ae19d6a975481f27b0e151f8e0d5b22910dd6c0db1cffdb8",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips04h.xlsx",
+      "bytes": 2529330,
+      "sha256": "1a5cbd11e89597f212bfb3ebee6490abf8a70ba172a293f0dc9c7fe03775c48a",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips04p.xlsx",
+      "bytes": 4285932,
+      "sha256": "80278daf8eb263c0785b9b0b918bddb1d84666e891b9a34057e91fa6bad2cefa",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips05h.xlsx",
+      "bytes": 2479999,
+      "sha256": "c2f9ecd45ca209de1311bb81b6a2fdeb902170757d824674026777036ef433a0",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips05p.xlsx",
+      "bytes": 4282239,
+      "sha256": "2374a013b9a8d1bdb3dc0b5c4959eb63188fda0651d7b8ac247bffc1adf45084",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips06a.xlsx",
+      "bytes": 572017,
+      "sha256": "36aca6c716afc32ed050b24f91f7e0ec47688396871edf2853c847a3257adbe2",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips06h.xlsx",
+      "bytes": 2591943,
+      "sha256": "482c57da6f70685b5b3b39f21eeba3302db07a05fe5e6b789060be08077e39a8",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips06p.xlsx",
+      "bytes": 5512928,
+      "sha256": "173e97242fb4aa7f80e0da643b73aca48f3512fec30975fe55ede2456f7db18c",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips07a.xlsx",
+      "bytes": 3056455,
+      "sha256": "e01006243178d2ddd17511e316f4d9bf6df1ba85388a2f1f3328f31df5e6fd4e",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips07h.xlsx",
+      "bytes": 2862441,
+      "sha256": "d3a5655cda50b6785c6ed61d915e5ff7902960d87dbbf90a7d0ccbd70bc66886",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips07p.xlsx",
+      "bytes": 5830308,
+      "sha256": "a9fc82ed3ce11ba0bb589b7809aaeb80610cccb97a5c827a1974285a60c1a66e",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips08a.xlsx",
+      "bytes": 2031943,
+      "sha256": "e4a285bb2cf3ca8a95adf4db79bed7ecb5c8f13c4d407d179409934b2353d45d",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips08h.xlsx",
+      "bytes": 2942216,
+      "sha256": "7a0c760f0a57fb118e84d88c0d96630e12508350a084f45ccf51e578dc5392ef",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips08p.xlsx",
+      "bytes": 5518967,
+      "sha256": "f5825750946cf41febd941a9529f387c1fe63fe9b5ae4f8371fd0333dbac39e8",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips09a.xlsx",
+      "bytes": 1639664,
+      "sha256": "15d191f379078ad63ee9f3cd5ec1174436ef10650a5f282d32a9c2a28080460f",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips09h.xlsx",
+      "bytes": 3273457,
+      "sha256": "80951c179837678402718c236eaedf5ed43f55447eb26921830ca28c3feb6f47",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips09p.xlsx",
+      "bytes": 5715206,
+      "sha256": "ff420f4254bf9701b335470a1873251cdd264a997e31777bfc6a51e9b4a4818f",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips10a.xlsx",
+      "bytes": 462989,
+      "sha256": "b498f5be9156ffe6e1e1799bfbbb5e45b39a355479b9d4e7b25885aeec01ebd5",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips10h.xlsx",
+      "bytes": 3619077,
+      "sha256": "a1b67cb0777f263b92b699cac67fdc98ba403383674a43f77145d22909e42f94",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips10p.xlsx",
+      "bytes": 6536720,
+      "sha256": "0c9fa2a1eee07bc458b88c3d0eff72ac9331b05a5911d8d869e3372a25d5faec",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips11a.xlsx",
+      "bytes": 1782648,
+      "sha256": "46d3a0c9417f8a304b427812e51b33eb7e81b9a92d05627561bda0040062ba35",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips11h.xlsx",
+      "bytes": 3672395,
+      "sha256": "549b6e515b0a30f20984a8b2c7ad97abefc1f2107141ac408461433fc31635e2",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips11p.xlsx",
+      "bytes": 6270308,
+      "sha256": "f19a54927ae1b539ac54a498446408c5627a9b51fe80b2f3f233e7e1ed83284f",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips12h.xlsx",
+      "bytes": 4892631,
+      "sha256": "ed6a884d7909c5a2a526bdbd91dc97404a4e488f94f5640d619e70a37a5024cc",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips12p.xlsx",
+      "bytes": 8585723,
+      "sha256": "cd5a8104e0ec36115960f72bd90f24c461967c0744e606172cb9ec1670d003fa",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips13h.xlsx",
+      "bytes": 4997554,
+      "sha256": "226e612f64a6ef1d3240a3969faca8c111d54cdfaed958e8aef0614a84408d26",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips13p.xlsx",
+      "bytes": 8215472,
+      "sha256": "88e093214dfd98d72945c3d1145307c026d8238750eaa8b34a686f0f8fff4351",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips14h.xlsx",
+      "bytes": 5067823,
+      "sha256": "c54bf55d5860a80fc9d52cd0ced339e19a47088504a5f54b465ba11e51b14164",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips14p.xlsx",
+      "bytes": 8126598,
+      "sha256": "3f58688b40091852b20e0ab82e6f852a56afed94a9f7f4d5984285272236d8a0",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips15h.xlsx",
+      "bytes": 5207445,
+      "sha256": "3224e4b776e915f9b4ce682f12c281d530d10c7283f971816f71f0a5ee0c153a",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips15p.xlsx",
+      "bytes": 8237737,
+      "sha256": "df5cd98f3485b50232bfa2a976e3e8f2a7bbab348dc3df2b2d8b793ea9adcae7",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips16h.xlsx",
+      "bytes": 5377777,
+      "sha256": "7ac14e941aaccc9464f4a0cfd8e50c633accb23abef68160f5a433a5e745f058",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips16p.xlsx",
+      "bytes": 8246189,
+      "sha256": "e242831f879dbf85114298cd69ce5ee2cee48f2b6fa511f7a46828ff61e0564d",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips17a.xlsx",
+      "bytes": 3955609,
+      "sha256": "0dac03a192caa9238d2de3ca0cb23059ec23b20782789e01d6ffa0befb0ae397",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips17h.xlsx",
+      "bytes": 5502218,
+      "sha256": "512135aabaa99327c105b46ec6620e8c530bc61a5f5fd6c0db8bf02c76841df0",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips17p.xlsx",
+      "bytes": 7467614,
+      "sha256": "07eb96bbbc6be8e811a70732f671a19fe94e18feb2dee8bbbc0e389d7f27f85e",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips18a1.xlsx",
+      "bytes": 1704666,
+      "sha256": "6f8bbbb0f5127e275d1f9a4104102c04bb7987464fc5da987f37880f6c4c95f3",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips18a2.xlsx",
+      "bytes": 980418,
+      "sha256": "2a0f4c08d666b5dfbc878e793a472d72b72dcfa7edc7ba6ec653851a99e73c39",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips18h.xlsx",
+      "bytes": 5594154,
+      "sha256": "63a3ac927b9eb076eb27cd5d164dfea177c62acb8dbda81498cf39532956136b",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips18p.xlsx",
+      "bytes": 7964471,
+      "sha256": "ead61065abe80a72f2073ae0d5e833f9a095858ade5803bcb4639b93fd4babce",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips19a.xlsx",
+      "bytes": 994220,
+      "sha256": "00fe61f1dd34c3a1dea1b910f4c7af85f77ddb7bd5673a3149378e1d24ccdb5c",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips19h.xlsx",
+      "bytes": 5744605,
+      "sha256": "3e3eb46493cb0b9cb5e05507e29ec2781bf0a03f32085cbfd0ab368a85c52ae2",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips19p.xlsx",
+      "bytes": 8137679,
+      "sha256": "e2a9f87b2e1c3877df9b970072cd75a198367bd253c8988d2dd3319d1b320c06",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips20a.xlsx",
+      "bytes": 59968,
+      "sha256": "820791110cbf98d21ac9792b07034a5766c6f1651c63166b66cc652e07cfbfca",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips20h.xlsx",
+      "bytes": 5840012,
+      "sha256": "a15c7c91b2cd94a41d182d15b45cae1714eeafbd789d8c770e86e3597ad7f904",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips20p.xlsx",
+      "bytes": 8601782,
+      "sha256": "f709b1e1275d543b2a29e1fbd1f0fc12c5a078af1a97c038d0a60d0b3cc98293",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips21a.xlsx",
+      "bytes": 600734,
+      "sha256": "3ef727fdfd04450d3ca622d2c5085be6898269d4bdc75fc5fe2ab029c9031807",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips21h.xlsx",
+      "bytes": 9574530,
+      "sha256": "ac4f164e38ba9abc39a68ba8335bb7cbdec3edfeb4ac6f1af0dee6a2c8ec16c1",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips21p.xlsx",
+      "bytes": 15663251,
+      "sha256": "fc4c06b0ebd8c87d960592bd1ed1ea42468e01c01b2bdf01adaab591f7ac4f75",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips22a.xlsx",
+      "bytes": 513685,
+      "sha256": "4ebfa79abbf024792435439dd12f7721a035d4c86ec0820d6c6d415dbaef3655",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips22h.xlsx",
+      "bytes": 9343455,
+      "sha256": "50452aec0c976028e1067165693eee6d97a0f3dabb155c97fbfd060ebcb8273c",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips22p.xlsx",
+      "bytes": 13943117,
+      "sha256": "428f59036febb40878f4d2d4658cd608112cf9ac9d109718619ed910b676a56f",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips23a.xlsx",
+      "bytes": 5576279,
+      "sha256": "2c0003d5b7cc97dd6d0995fa8601fb4de6d0afa16ed272a5592f845a918335ee",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips23h.xlsx",
+      "bytes": 9454622,
+      "sha256": "05af9f1c99827c5c179a21b3084fbab85ac67aa71a63bae5ba0393a024a14626",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips23p.xlsx",
+      "bytes": 13609291,
+      "sha256": "92c8d9ad37930c5d2a1eaf43185cf7d5050be9e0c594f1a67ef5bfd3616d6079",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips24a.xlsx",
+      "bytes": 7062486,
+      "sha256": "2b1e4301ba97edc2fd94ca210efdcd2fb841afa2bbace9c6f6fb92e58350dee9",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips24h.xlsx",
+      "bytes": 9704066,
+      "sha256": "ff7ee80d95a73702336174a0611970fe2c8776cb6cf498902e12e9f7e22ab5d5",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips24p.xlsx",
+      "bytes": 14581678,
+      "sha256": "ba09020aaedfda297b5ef081126950ee47c92fa24ce0a4b344993b8f96937d05",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips25a.xlsx",
+      "bytes": 7293579,
+      "sha256": "98b32f1a27292ad23755376d3a5e8ee88654e896b3b76a9a3164ad5e289b84a5",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips25h.xlsx",
+      "bytes": 9871824,
+      "sha256": "9a83a1f47ce1543e5fee1c3e4eed94519ba574930bc8946fe1d321c45655e7b1",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips25p.xlsx",
+      "bytes": 14923842,
+      "sha256": "c27797f5a81d043005a634b4ef3e7e0f97b9c3c023ee6e1950da149e32c155c1",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips26a.xlsx",
+      "bytes": 3951660,
+      "sha256": "ef6af7d35c0c91619c41e8a29a01fac1f3cc4a0df6171fa9adf8682e58d0f3ea",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips26h.xlsx",
+      "bytes": 9939569,
+      "sha256": "6f5d6953df53697fcd2c52f49ccb5802e980d6983455c74094f1c6ff01ea4806",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips26p.xlsx",
+      "bytes": 15176280,
+      "sha256": "df3d51c4a1fec08a910240e8294c7f751dadaa39fc9d68b00f5e12872dfb6092",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips27a.xlsx",
+      "bytes": 8746350,
+      "sha256": "2a7826c142110b424d10b4ed8066390237ee171e4af7cbfd3b3a69faac57f2a8",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips27h.xlsx",
+      "bytes": 10026271,
+      "sha256": "f9e35e5f4968c5c7b117cca8065aa4b84a04474f814d9869f880a7597ce5e00d",
+      "matches_reference": true
+    },
+    {
+      "file": "eklips27p.xlsx",
+      "bytes": 15033033,
+      "sha256": "54803dfb45e502502ef5070b14cae16eb120a739124410e32d200195d5baf307",
+      "matches_reference": true
+    },
+    {
+      "file": "01 Household Questionnaire(Wave 1-27).pdf",
+      "bytes": 1558663,
+      "sha256": "0bfd0b5c7524c90fb322fb4b6493ab80fefbc277c0a17bdf0282aafe6abf5e3a",
+      "matches_reference": true
+    },
+    {
+      "file": "02 Individual Questionnaire(Wave 1-27).pdf",
+      "bytes": 261264,
+      "sha256": "182ac973f328b2dce9d9e8c368048fb0f651ecf2e9bcde63447a6f9999ee1b84",
+      "matches_reference": true
+    },
+    {
+      "file": "03 Job Class 1 to 8 Questionnaire(Wave 1-27).pdf",
+      "bytes": 2773851,
+      "sha256": "21ab9cefd516908c38a070a067b0913b4515da1ce6a807bde7c01d5a3037d607",
+      "matches_reference": true
+    },
+    {
+      "file": "04 Individual Working Questionnaire(Wave 1-27).pdf",
+      "bytes": 2409602,
+      "sha256": "ce9f1a8f3f4f2aa81f237447dd70af0914e291ba95f30d4b2bfa71e218a2284c",
+      "matches_reference": true
+    },
+    {
+      "file": "05 Individual Non-working Questionnaire(Wave 1-27).pdf",
+      "bytes": 1616485,
+      "sha256": "747c67e0256976dc37e6d82759b81a28843399318c8a601ff179bc4cc2cd4dd2",
+      "matches_reference": true
+    },
+    {
+      "file": "06 Supplemental Surveys(Wave 1-27).pdf",
+      "bytes": 7005399,
+      "sha256": "6f4eec4eed2ef92c7739765bd2fb8ffc363659de7ae1987949386b6728b29cdf",
+      "matches_reference": true
+    },
+    {
+      "file": "KLIPS Wave 1-27(1998-2024) User Guide.pdf",
+      "bytes": 1535118,
+      "sha256": "fd0bb362e2110ca062dce8ddfc2dfbac21d4e9e52a0001f9f09a8205df8be491",
+      "matches_reference": true
+    },
+    {
+      "file": "codebook1(Wave 1-27).xls",
+      "bytes": 4695040,
+      "sha256": "bdb50d176cc6519a22a6da3a96e5bf818ca38a1689f2d8956de83afa12cc6434",
+      "matches_reference": true
+    },
+    {
+      "file": "codebook2_supplemental survey(Wave 1-27).xls",
+      "bytes": 1995264,
+      "sha256": "5422a1d3c4b47113b8f2fe6e9b8b9be7b2a296fba717e9951a0aac0a31a4e809",
+      "matches_reference": true
+    }
+  ],
+  "count": 83,
+  "missing_unused": "eklips27w.xlsx"
+}

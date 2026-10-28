@@ -1,0 +1,39 @@
+# Restricted source data and respondent-level generated files
+/raw/
+/private/
+*.xlsx
+*.xls
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+*.feather
+*.npy
+*.npz
+
+# Manuscript sources, submission material and local packaging
+/documents/
+/templates/
+/source*/
+/release/
+*.docx
+*.zip
+Review_*.pdf
+Feedback*
+*Author_Declaration*
+
+# Runtime output and environments
+/logs/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local credentials
+.env
+.env.*
+*.pem
+*.key

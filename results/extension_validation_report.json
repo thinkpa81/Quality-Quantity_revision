@@ -1,0 +1,439 @@
+{
+  "status": "PASS",
+  "checks_passed": 55,
+  "checks": [
+    {
+      "check": "three_training_constant_flags",
+      "status": "PASS",
+      "detail": [
+        "post_2018_workweek_reform",
+        "covid_period",
+        "post_covid_period"
+      ]
+    },
+    {
+      "check": "period_flags_are_baseline_year",
+      "status": "PASS",
+      "detail": "No future/outcome year defines a period flag"
+    },
+    {
+      "check": "xgboost_calibration_float64_consistency",
+      "status": "PASS",
+      "detail": "Current XGBoost isotonic summaries agree with explicit float64 refit; float32 comparator retained for provenance"
+    },
+    {
+      "check": "fold1_exact_extra_exclusions",
+      "status": "PASS",
+      "detail": [
+        {
+          "train_end": 7,
+          "feature_excluded_beyond_primary": "job_sat_overall_work",
+          "observed_in_fold": 0
+        },
+        {
+          "train_end": 7,
+          "feature_excluded_beyond_primary": "voluntary_work_form",
+          "observed_in_fold": 0
+        }
+      ]
+    },
+    {
+      "check": "drift_denominator_train",
+      "status": "PASS",
+      "detail": 86542
+    },
+    {
+      "check": "standardization_train",
+      "status": "PASS",
+      "detail": "Recomputed from stratum counts and fixed reference"
+    },
+    {
+      "check": "drift_denominator_validation",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "standardization_validation",
+      "status": "PASS",
+      "detail": "Recomputed from stratum counts and fixed reference"
+    },
+    {
+      "check": "drift_denominator_test",
+      "status": "PASS",
+      "detail": 27063
+    },
+    {
+      "check": "standardization_test",
+      "status": "PASS",
+      "detail": "Recomputed from stratum counts and fixed reference"
+    },
+    {
+      "check": "absent_cohort_rates_not_imputed",
+      "status": "PASS",
+      "detail": "2018 strata excluded from historical common support"
+    },
+    {
+      "check": "decomposition_identity_train_test",
+      "status": "PASS",
+      "detail": [
+        -0.02906420505336954,
+        0.004956643385134473,
+        -0.036733055557824884,
+        0.002712207119320867
+      ]
+    },
+    {
+      "check": "decomposition_identity_train_validation",
+      "status": "PASS",
+      "detail": [
+        -0.017334151293693367,
+        0.002440094192074138,
+        -0.024039265095776287,
+        0.0042650196100087745
+      ]
+    },
+    {
+      "check": "decomposition_identity_validation_test",
+      "status": "PASS",
+      "detail": [
+        -0.011730053759676173,
+        0.002816070374936067,
+        -0.01299331164392433,
+        -0.0015528124906879076
+      ]
+    },
+    {
+      "check": "all_five_models_both_origins",
+      "status": "PASS",
+      "detail": "2 origins \u00d7 5 learners \u00d7 3 output maps"
+    },
+    {
+      "check": "earlier_forward_label_timing",
+      "status": "PASS",
+      "detail": [
+        {
+          "origin_train_end": 14,
+          "base_train_end": 7,
+          "latest_base_outcome": 8,
+          "oof_start": 9,
+          "oof_end": 11,
+          "meta_training_n": 26280
+        },
+        {
+          "origin_train_end": 14,
+          "base_train_end": 10,
+          "latest_base_outcome": 11,
+          "oof_start": 12,
+          "oof_end": 14,
+          "meta_training_n": 26280
+        },
+        {
+          "origin_train_end": 17,
+          "base_train_end": 7,
+          "latest_base_outcome": 8,
+          "oof_start": 9,
+          "oof_end": 11,
+          "meta_training_n": 41344
+        },
+        {
+          "origin_train_end": 17,
+          "base_train_end": 10,
+          "latest_base_outcome": 11,
+          "oof_start": 12,
+          "oof_end": 14,
+          "meta_training_n": 41344
+        },
+        {
+          "origin_train_end": 17,
+          "base_train_end": 13,
+          "latest_base_outcome": 14,
+          "oof_start": 15,
+          "oof_end": 17,
+          "meta_training_n": 41344
+        }
+      ]
+    },
+    {
+      "check": "origin_metric_14_logistic",
+      "status": "PASS",
+      "detail": 16621
+    },
+    {
+      "check": "origin_metric_14_random_forest",
+      "status": "PASS",
+      "detail": 16621
+    },
+    {
+      "check": "origin_metric_14_xgboost",
+      "status": "PASS",
+      "detail": 16621
+    },
+    {
+      "check": "origin_metric_14_catboost",
+      "status": "PASS",
+      "detail": 16621
+    },
+    {
+      "check": "origin_metric_14_forward_stack",
+      "status": "PASS",
+      "detail": 16621
+    },
+    {
+      "check": "origin_metric_17_logistic",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "origin_metric_17_random_forest",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "origin_metric_17_xgboost",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "origin_metric_17_catboost",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "origin_metric_17_forward_stack",
+      "status": "PASS",
+      "detail": 25961
+    },
+    {
+      "check": "ten_complete_seed_results",
+      "status": "PASS",
+      "detail": "Full stochastic/OOF and paired ablation results for ten fixed seeds"
+    },
+    {
+      "check": "seed_metrics_finite",
+      "status": "PASS",
+      "detail": 120
+    },
+    {
+      "check": "seed_contrasts_independent_arithmetic",
+      "status": "PASS",
+      "detail": 50
+    },
+    {
+      "check": "seed0_matches_primary_scores",
+      "status": "PASS",
+      "detail": "Primary seed reused without selecting the best seed"
+    },
+    {
+      "check": "matched_model_threads",
+      "status": "PASS",
+      "detail": "Three threads for every primary and repeated stochastic fit"
+    },
+    {
+      "check": "seed0_ablation_matches_no_year",
+      "status": "PASS",
+      "detail": "Matched seed and execution threads reproduce primary ablation"
+    },
+    {
+      "check": "seed0_ablation_matches_no_calendar",
+      "status": "PASS",
+      "detail": "Matched seed and execution threads reproduce primary ablation"
+    },
+    {
+      "check": "all_seed_meta_fits_converged",
+      "status": "PASS",
+      "detail": [
+        {
+          "seed": 20261026,
+          "iterations": 21,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261027,
+          "iterations": 20,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261028,
+          "iterations": 23,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261029,
+          "iterations": 20,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261030,
+          "iterations": 23,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261031,
+          "iterations": 22,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261032,
+          "iterations": 20,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261033,
+          "iterations": 21,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261034,
+          "iterations": 22,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        },
+        {
+          "seed": 20261035,
+          "iterations": 20,
+          "limit": 2000,
+          "coefficients_reproduced": true
+        }
+      ]
+    },
+    {
+      "check": "matched_below65_rows",
+      "status": "PASS",
+      "detail": "All-age and restricted fits evaluate identical baseline-age subset"
+    },
+    {
+      "check": "age_baseline_recomputed_catboost",
+      "status": "PASS",
+      "detail": 22987
+    },
+    {
+      "check": "age_baseline_recomputed_forward_stack",
+      "status": "PASS",
+      "detail": 22987
+    },
+    {
+      "check": "stack_floor_respected",
+      "status": "PASS",
+      "detail": {
+        "probability_input_intercept": -3.253323735616758,
+        "all_coefficients_positive": true,
+        "mathematical_minimum_over_unit_cube": 0.037207637081670956,
+        "observed_minimum": 0.03830217167714985,
+        "logit_input_clip": 1e-06,
+        "meta_C": 1,
+        "meta_standardization": false,
+        "interpretation": "Exploratory scale sensitivity; no primary model replacement based on test scores"
+      }
+    },
+    {
+      "check": "distinct_389_event_sets",
+      "status": "PASS",
+      "detail": {
+        "disjoint_events": 389,
+        "nonwage_events": 389,
+        "intersecting_person_wave_keys": 59,
+        "identical_event_sets": false
+      }
+    },
+    {
+      "check": "raw_cutoff_all_21_23_catboost",
+      "status": "PASS",
+      "detail": 0.14357684053302272
+    },
+    {
+      "check": "raw_cutoff_all_21_23_logistic",
+      "status": "PASS",
+      "detail": 0.11990913804503905
+    },
+    {
+      "check": "raw_cutoff_all_21_23_forward_stack",
+      "status": "PASS",
+      "detail": 0.10484567858323117
+    },
+    {
+      "check": "raw_cutoff_pre2020_21_22_catboost",
+      "status": "PASS",
+      "detail": 0.14357684053302272
+    },
+    {
+      "check": "raw_cutoff_pre2020_21_22_logistic",
+      "status": "PASS",
+      "detail": 0.12954175891646424
+    },
+    {
+      "check": "raw_cutoff_pre2020_21_22_forward_stack",
+      "status": "PASS",
+      "detail": 0.10484567858323117
+    },
+    {
+      "check": "raw_cutoff_2020_only_23_catboost",
+      "status": "PASS",
+      "detail": 0.18983464041950018
+    },
+    {
+      "check": "raw_cutoff_2020_only_23_logistic",
+      "status": "PASS",
+      "detail": 0.09529651067588123
+    },
+    {
+      "check": "raw_cutoff_2020_only_23_forward_stack",
+      "status": "PASS",
+      "detail": 0.11222763948386427
+    },
+    {
+      "check": "calibration_windows_independently_refitted",
+      "status": "PASS",
+      "detail": 9
+    },
+    {
+      "check": "precision_selection_prevalence_identity",
+      "status": "PASS",
+      "detail": "Descriptive algebra, not a causal fairness explanation"
+    },
+    {
+      "check": "household_component_reconstruction",
+      "status": "PASS",
+      "detail": {
+        "people": 11187,
+        "connected_components": 7768,
+        "maximum_people_per_component": 6,
+        "maximum_rows_per_component": 16,
+        "median_people": 1.0,
+        "singleton_person_components": 4974,
+        "rows_missing_household": 0,
+        "resamples": 1000,
+        "construction": "Union of people co-resident in a positive household identifier within any same test wave; all rows of each person retained in one component",
+        "scope": "Dependence sensitivity, not full sampling-design or population inference"
+      }
+    },
+    {
+      "check": "household_paired_intervals",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "check": "logit_stack_paired_intervals",
+      "status": "PASS",
+      "detail": 9
+    },
+    {
+      "check": "matched_below65_paired_intervals",
+      "status": "PASS",
+      "detail": 9
+    },
+    {
+      "check": "rounding_training_followup",
+      "status": "PASS",
+      "detail": "8024 / 94566"
+    }
+  ],
+  "scope": "Additional exploratory analyses; safeguards are scoped and do not claim complete survey-design or redevelopment inference"
+}

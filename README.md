@@ -29,8 +29,22 @@ The benchmark uses unweighted person-wave fitting, validation-only probability c
 
 `results/validation_report.json` and `results/extension_validation_report.json` record the primary and sensitivity checks. `results/review_validation_report.json` records 71 numerical and source checks performed by `validate_review.py`; these concern scientific outputs and contain no reviewer correspondence. `FILE_MANIFEST.csv` and `SHA256SUMS.txt` identify the distributed files and their hashes.
 
-The 2026-10-28 package verification checked the inherited archive hashes, public-file contents, paired-bootstrap interval arithmetic and ten-seed contrast arithmetic. Source validation now follows the declared manifest rather than a hard-coded file count. These checks do not represent a new model-fitting run; recorded fit outputs retain their original provenance. Any subsequent reconstruction or verification is described in its accompanying report.
+The 2026-10-28 verification combines archive and public-content checks, fresh source reconstruction and primary refits, and aggregate arithmetic. Source validation follows the declared manifest rather than a hard-coded file count. The fresh-execution scope is documented below; other retained experiments keep their original provenance.
 
 ## Public contents
 
 `python/` contains analysis and validation code; `config/` records the protocol and source manifest; `results/` contains aggregate tables, summary checks and aggregate bootstrap draws; `figures/` contains five figures in PDF and PNG formats. Bootstrap rows are resampled statistics, not respondent records. Raw data, fitted objects, respondent-level predictions, manuscript source files, author declarations and editorial correspondence are excluded. The repository ignore rules also exclude local data, caches, logs and credentials.
+
+## Independent execution verification — 28 October 2026
+
+Fresh reads of all 83 declared source files reconstructed the 417,823-row panel, 160,102-row risk table and 139,566-row analytical table exactly, including stored-data hashes. All 54 required person/household inputs were covered; the 84th listed but unused work-history workbook could not be retrieved and was not content-audited.
+
+Twenty fresh base-model fits (four full-training and sixteen forward-OOF fits), one unweighted meta-learner, and validation-only recalibration reproduced 54 probability-vector comparisons, 540 metric comparisons and 15 selected thresholds within the prespecified absolute tolerance 1e-10. The largest probability difference was 6.18e-12 after recalibration; the largest metric difference was 9.77e-14. Original sensitivity refits and bootstrap sampling were not all rerun in this verification. See verification_20261028/primary_refit_verification.json and the reconstruction/aggregate reports for the exact scope and checksums.
+
+Verify the released aggregate arithmetic without raw data or third-party packages:
+
+```bash
+python python/verify_aggregate_release.py
+```
+
+This checks 120 primary intervals, 56 paired contrasts, 50 ten-seed summaries, 18 utility scenarios and 3 drift identities. `python/reproduce_primary.py --help` describes the optional fresh-refit comparison; it requires locally held respondent-level reference predictions, which are not redistributed here.

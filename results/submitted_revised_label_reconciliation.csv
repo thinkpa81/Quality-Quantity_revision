@@ -1,0 +1,7 @@
+_merge,old_label,exit_label_t1,n
+left_only,1.0,,1
+right_only,,0.0,24
+right_only,,1.0,22
+both,0.0,0.0,124354
+both,1.0,0.0,17
+both,1.0,1.0,15149
