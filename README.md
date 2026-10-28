@@ -48,3 +48,9 @@ python python/verify_aggregate_release.py
 ```
 
 This checks 120 primary intervals, 56 paired contrasts, 50 ten-seed summaries, 18 utility scenarios and 3 drift identities. `python/reproduce_primary.py --help` describes the optional fresh-refit comparison; it requires locally held respondent-level reference predictions, which are not redistributed here.
+
+## Interpretation update — 29 October 2026
+
+The current release clarifies composite-outcome heterogeneity, retrospective information boundaries, conditional uncertainty and the interpretation of person-disjoint comparisons. See `docs/BENCHMARK_SCOPE.md` for the claim boundaries, including CITL versus the joint calibration intercept, weighting and single-fit SHAP stability. Numerical results and model-fitting code remain unchanged. The fresh fitting verification remains dated 28 October 2026; current checks of retained predictions and aggregate arithmetic are in `verification_20261029/`.
+
+Aggregate reporting now imports lightweight `report_paths.py` instead of model-fitting dependencies. All 54 rendered table outputs were compared with the prior implementation and match exactly. The optional `verify_retained_predictions.py` uses locally held predictions; it emits only aggregate diagnostic checks.

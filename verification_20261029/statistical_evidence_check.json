@@ -1,0 +1,428 @@
+{
+  "release": "2026-10-29",
+  "status": "PASS",
+  "scope": "Arithmetic and diagnostic-estimation checks using retained predictions; no new predictive model fit or bootstrap draw generation",
+  "checks": {
+    "independent_calibration": {
+      "status": "PASS",
+      "variants": 15,
+      "coefficients_checked": 45,
+      "tolerance_absolute": 1e-08,
+      "maximum_error": 1.5362711103250604e-14,
+      "rows": [
+        {
+          "model": "logistic",
+          "method": "raw",
+          "max_absolute_coefficient_difference": 8.326672684688674e-16,
+          "recomputed": {
+            "calibration_intercept": 0.02717090704378604,
+            "calibration_joint_intercept": -0.4324937593401988,
+            "calibration_slope": 0.7819692650435865
+          }
+        },
+        {
+          "model": "logistic",
+          "method": "platt",
+          "max_absolute_coefficient_difference": 9.992007221626409e-16,
+          "recomputed": {
+            "calibration_intercept": -0.10460441497072619,
+            "calibration_joint_intercept": -0.17059248028580828,
+            "calibration_slope": 0.9672707804383281
+          }
+        },
+        {
+          "model": "logistic",
+          "method": "isotonic",
+          "max_absolute_coefficient_difference": 5.551115123125783e-16,
+          "recomputed": {
+            "calibration_intercept": -0.10269083440330383,
+            "calibration_joint_intercept": -0.25743418790786815,
+            "calibration_slope": 0.9219563614138355
+          }
+        },
+        {
+          "model": "random_forest",
+          "method": "raw",
+          "max_absolute_coefficient_difference": 6.2450045135165055e-15,
+          "recomputed": {
+            "calibration_intercept": -0.18050530602250128,
+            "calibration_joint_intercept": 0.13686759891351621,
+            "calibration_slope": 1.1659980556747802
+          }
+        },
+        {
+          "model": "random_forest",
+          "method": "platt",
+          "max_absolute_coefficient_difference": 3.157196726277789e-16,
+          "recomputed": {
+            "calibration_intercept": -0.1080232859266878,
+            "calibration_joint_intercept": -0.008885531094153838,
+            "calibration_slope": 1.0504920365916162
+          }
+        },
+        {
+          "model": "random_forest",
+          "method": "isotonic",
+          "max_absolute_coefficient_difference": 1.5362711103250604e-14,
+          "recomputed": {
+            "calibration_intercept": -0.11046089822005534,
+            "calibration_joint_intercept": -0.1247889085330986,
+            "calibration_slope": 0.9926281972871982
+          }
+        },
+        {
+          "model": "xgboost",
+          "method": "raw",
+          "max_absolute_coefficient_difference": 1.1657341758564144e-15,
+          "recomputed": {
+            "calibration_intercept": -0.15158595663383448,
+            "calibration_joint_intercept": -0.3568098200368461,
+            "calibration_slope": 0.8914493897915053
+          }
+        },
+        {
+          "model": "xgboost",
+          "method": "platt",
+          "max_absolute_coefficient_difference": 4.6074255521944e-15,
+          "recomputed": {
+            "calibration_intercept": -0.1534058815725206,
+            "calibration_joint_intercept": -0.18139581614654465,
+            "calibration_slope": 0.9853454714053109
+          }
+        },
+        {
+          "model": "xgboost",
+          "method": "isotonic",
+          "max_absolute_coefficient_difference": 5.745404152435185e-15,
+          "recomputed": {
+            "calibration_intercept": -0.15219652545269055,
+            "calibration_joint_intercept": -0.24689782149133463,
+            "calibration_slope": 0.9498718326313693
+          }
+        },
+        {
+          "model": "catboost",
+          "method": "raw",
+          "max_absolute_coefficient_difference": 1.0269562977782698e-15,
+          "recomputed": {
+            "calibration_intercept": -0.21862755981401327,
+            "calibration_joint_intercept": -0.16396586619604375,
+            "calibration_slope": 1.0294769976851617
+          }
+        },
+        {
+          "model": "catboost",
+          "method": "platt",
+          "max_absolute_coefficient_difference": 1.3988810110276972e-14,
+          "recomputed": {
+            "calibration_intercept": -0.14556030388476027,
+            "calibration_joint_intercept": -0.083047248930846,
+            "calibration_slope": 1.0324229218088123
+          }
+        },
+        {
+          "model": "catboost",
+          "method": "isotonic",
+          "max_absolute_coefficient_difference": 4.246603069191224e-15,
+          "recomputed": {
+            "calibration_intercept": -0.1460475363005622,
+            "calibration_joint_intercept": -0.1430304666934096,
+            "calibration_slope": 1.0015925696636827
+          }
+        },
+        {
+          "model": "forward_stack",
+          "method": "raw",
+          "max_absolute_coefficient_difference": 4.440892098500626e-16,
+          "recomputed": {
+            "calibration_intercept": -0.009957996611805239,
+            "calibration_joint_intercept": 0.4019727400566814,
+            "calibration_slope": 1.1902873940912906
+          }
+        },
+        {
+          "model": "forward_stack",
+          "method": "platt",
+          "max_absolute_coefficient_difference": 2.7755575615628914e-17,
+          "recomputed": {
+            "calibration_intercept": -0.11974789471848889,
+            "calibration_joint_intercept": -0.03136709722932967,
+            "calibration_slope": 1.0434045743649862
+          }
+        },
+        {
+          "model": "forward_stack",
+          "method": "isotonic",
+          "max_absolute_coefficient_difference": 6.855627177060342e-15,
+          "recomputed": {
+            "calibration_intercept": -0.1277140045575908,
+            "calibration_joint_intercept": -0.11289329637777193,
+            "calibration_slope": 1.0077854305779856
+          }
+        }
+      ],
+      "definitions": {
+        "calibration_intercept": "CITL; intercept with logit(p) offset and slope fixed at1",
+        "calibration_joint_intercept": "Intercept estimated jointly with calibration slope"
+      }
+    },
+    "weighted_evaluation": {
+      "status": "PASS",
+      "rows": 20,
+      "metrics_per_row": 7,
+      "max_abs_difference": 3.637978807091713e-12,
+      "pooled_rows": 26584,
+      "excluded_missing_or_nonpositive_weight_rows": 479,
+      "scope": "Positive integrated2018 cross-sectional weights on observed-followup test rows; no survey-weighted training and no full survey-design variance"
+    },
+    "history_stratified_fixed_model": {
+      "status": "PASS",
+      "group_rows": 20,
+      "group_metrics_per_row": 6,
+      "max_abs_difference": 0,
+      "paired_history_interval_rows": 36,
+      "replicates_per_interval": 500,
+      "raw_roc_contrasts": [
+        {
+          "history_definition": "eligible_training_history",
+          "contrast": "eligible_or_observed_history",
+          "method": "raw",
+          "metric": "roc_auc",
+          "estimate": 0.029569063064375234,
+          "lower": -0.008026515530188162,
+          "upper": 0.07402998268691295,
+          "resamples": 500,
+          "unit": "person within history-by-assignment cell"
+        },
+        {
+          "history_definition": "eligible_training_history",
+          "contrast": "without_history",
+          "method": "raw",
+          "metric": "roc_auc",
+          "estimate": -0.010615240133758252,
+          "lower": -0.04777640902445761,
+          "upper": 0.03208787438914007,
+          "resamples": 500,
+          "unit": "person within history-by-assignment cell"
+        },
+        {
+          "history_definition": "eligible_training_history",
+          "contrast": "history_minus_no_history_gap",
+          "method": "raw",
+          "metric": "roc_auc",
+          "estimate": 0.040184303198133486,
+          "lower": -0.012809094603093417,
+          "upper": 0.10038868119214324,
+          "resamples": 500,
+          "unit": "person within history-by-assignment cell"
+        }
+      ]
+    },
+    "earlier_origin_coverage": {
+      "status": "PASS",
+      "origins": [
+        14,
+        17
+      ],
+      "learners_per_origin": 5,
+      "probability_variants_per_learner": 3,
+      "rows": 30,
+      "windows": {
+        "14": {
+          "train": [
+            1,
+            14
+          ],
+          "validation": [
+            15,
+            17
+          ],
+          "test": [
+            18,
+            20
+          ]
+        },
+        "17": {
+          "train": [
+            1,
+            17
+          ],
+          "validation": [
+            18,
+            20
+          ],
+          "test": [
+            21,
+            23
+          ]
+        }
+      },
+      "internal_oof_strict_labels_before_scoring": true,
+      "scope": "Two earlier expanding-training origins, not exhaustive rolling-window or prospective release-calendar validation"
+    },
+    "shap_stability": {
+      "status": "PASS",
+      "source_rows": [
+        {
+          "sample_A": 1,
+          "sample_B": 2,
+          "rank_spearman": 0.9992225177163061,
+          "top20_overlap": 20,
+          "same_model_iterations": 300,
+          "sample_rows": 1000
+        },
+        {
+          "sample_A": 1,
+          "sample_B": 3,
+          "rank_spearman": 0.9991767834643239,
+          "top20_overlap": 20,
+          "same_model_iterations": 300,
+          "sample_rows": 1000
+        },
+        {
+          "sample_A": 2,
+          "sample_B": 3,
+          "rank_spearman": 0.9993094127950718,
+          "top20_overlap": 20,
+          "same_model_iterations": 300,
+          "sample_rows": 1000
+        }
+      ],
+      "scope": "Three disjoint1000-row samples of one fixed primary300-iteration CatBoost; no retraining, cross-time, causal or independent-feature-effect guarantee"
+    },
+    "aggregate_reverification": {
+      "status": "PASS",
+      "scope": "Released aggregate arithmetic; no raw or private data used",
+      "tolerances": {
+        "absolute": 1e-12,
+        "relative": 1e-09
+      },
+      "percentile_method": "linear interpolation at probabilities 0.025 and 0.975",
+      "seed_sd_convention": "sample standard deviation (ddof=1)",
+      "sources": [
+        {
+          "file": "aggregate_bootstrap_replicates.csv",
+          "rows": 15000,
+          "sha256": "cbb65c875e60cfabf3cbe771799bd479e3aace2133af75d7dd6579d39ae92ee6"
+        },
+        {
+          "file": "primary_cluster_confidence_intervals.csv",
+          "rows": 120,
+          "sha256": "437adcfaeba56860df1251b627642da259ec5c4e797bb8349e8c83bc85273f1f"
+        },
+        {
+          "file": "paired_cluster_model_contrasts.csv",
+          "rows": 56,
+          "sha256": "160cb3336b002a1299ffe05a4324f91369c34be3134c0bd054953a2c2bd6ccb4"
+        },
+        {
+          "file": "seed_metrics.csv",
+          "rows": 120,
+          "sha256": "ff8a7e8e15328d24c743b52eb10ed73a3701c721d97630365116a92342066901"
+        },
+        {
+          "file": "seed_contrasts.csv",
+          "rows": 50,
+          "sha256": "1f75cc5d0f29fe4530029f0c8f3ef32cfca3f34c719d4a40ceb94f81eaf89e79"
+        },
+        {
+          "file": "utility_scenarios.csv",
+          "rows": 18,
+          "sha256": "1cd0be65b387866809145c6c682fde719b39c7806df848bbaeb82594d4a29233"
+        },
+        {
+          "file": "drift_decomposition.csv",
+          "rows": 12,
+          "sha256": "e9cd540d37e178be610abfbb720b4e22a434e6e7d3730be6b19017140734210e"
+        }
+      ],
+      "checks": [
+        {
+          "check": "primary_percentile_intervals",
+          "records_checked": 120,
+          "status": "PASS",
+          "source_files": [
+            "aggregate_bootstrap_replicates.csv",
+            "primary_cluster_confidence_intervals.csv"
+          ],
+          "bounds_checked": 240,
+          "replicates_per_variant": 1000,
+          "variants": 15
+        },
+        {
+          "check": "paired_model_contrasts",
+          "records_checked": 56,
+          "status": "PASS",
+          "source_files": [
+            "aggregate_bootstrap_replicates.csv",
+            "primary_cluster_confidence_intervals.csv",
+            "paired_cluster_model_contrasts.csv"
+          ],
+          "bounds_checked": 112,
+          "point_differences_checked": 56,
+          "pairing": "identical bootstrap replicate identifiers"
+        },
+        {
+          "check": "ten_seed_contrast_summaries",
+          "records_checked": 50,
+          "status": "PASS",
+          "source_files": [
+            "seed_metrics.csv",
+            "seed_contrasts.csv"
+          ],
+          "paired_seeds_per_contrast": 10,
+          "summary_values_checked": 300
+        },
+        {
+          "check": "utility_arithmetic_and_reference_policies",
+          "records_checked": 18,
+          "status": "PASS",
+          "source_files": [
+            "utility_scenarios.csv",
+            "primary_cluster_confidence_intervals.csv"
+          ],
+          "values_checked": 72,
+          "test_rows": 27063
+        },
+        {
+          "check": "drift_decomposition_identities",
+          "records_checked": 3,
+          "status": "PASS",
+          "source_files": [
+            "drift_decomposition.csv"
+          ],
+          "components_per_contrast": 3
+        }
+      ],
+      "failures": []
+    }
+  },
+  "qualifications": [
+    {
+      "topic": "person dependence",
+      "finding": "Person-cluster pairing and household-component sensitivity address specified observed clustering. Fits, maps, thresholds and observed historical waves remain fixed."
+    },
+    {
+      "topic": "temporal validation",
+      "finding": "Primary completed-wave boundary and stricter forward-OOF boundary are distinct and explicit. Release delays, within-year ordering and future common shocks remain outside scope."
+    },
+    {
+      "topic": "calibration terminology",
+      "finding": "CITL is the reported offset calibration intercept, not an independent additional statistic. Joint intercept is separately stored, and slopes are jointly estimated."
+    },
+    {
+      "topic": "person-disjoint score",
+      "finding": "Primary vs disjoint results use different training/evaluation populations. Lower point performance cannot identify person memorisation or the causal effect of training overlap."
+    }
+  ],
+  "source_hashes": {
+    "model_calibration_metrics.csv": "fb6374b4bb9a01a240f700382340c855869ab6f2729982017182a606c7829f00",
+    "survey_weighted_metrics.csv": "bdf1a80eef491604d33acbb5af10e2e6843dc5ced776a163527ce9cb1499e392",
+    "disjoint_history_groups.csv": "adfc35e51c8e27370382f6c93c22323a8df3d81a090e6687f6fadb7dd28fc853",
+    "disjoint_history_contrasts.csv": "5620525c600648f3a97d8580e0866b5a29c8487a6244dd0de54a924937139804",
+    "disjoint_history_bootstrap_replicates.csv": "bafca37797cfc5bea903e54464291343ffa19404be2e22cf006314aa7a5d27f5",
+    "all_model_origins.csv": "d7f6b23d38625326d94add44826098699920f7b261e7a9ff7d0c06d4d094f9f0",
+    "origin_forward_folds.csv": "ea83c077646382f1462465e0923b2f2350d1fba657c2ec67ad2e61bea586374b",
+    "shap_rank_stability.csv": "0ef31c35c6b4c3ae51d278013a1c0262b781f4f0230afa0dd4ad1133b28e008d"
+  }
+}

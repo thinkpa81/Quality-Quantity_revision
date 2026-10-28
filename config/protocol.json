@@ -219,6 +219,7 @@
   },
   "drift": "age x cohort common support; pooled fixed reference; exact symmetric composition/rate/outside-support decomposition",
   "logit_stack": "C=1; logit clip1e-6; same OOF rows; exploratory",
-  "release_date": "2026-10-28",
-  "verification_scope": "Fresh raw reconstruction and primary full-training/forward-OOF refits; other experiments checked against retained outputs, not all refitted in this verification"
+  "release_date": "2026-10-29",
+  "verification_scope": "Fresh raw reconstruction and primary full-training/forward-OOF refits; other experiments checked against retained outputs, not all refitted in this verification",
+  "release_scope": "Interpretation clarification and aggregate/retained-prediction verification; no new predictive-model fits on2026-10-29"
 }

@@ -1,7 +1,7 @@
 from __future__ import annotations
 import numpy as np
 import pandas as pd
-from common import RES,ROOT
+from report_paths import RES,ROOT
 
 NAMES={'logistic':'Logistic','random_forest':'Random forest','xgboost':'XGBoost','catboost':'CatBoost','forward_stack':'Forward stack','forward_stack_balanced':'Balanced forward stack','shuffled_stack':'Shuffled stack'}
 METHODS={'raw':'Raw','platt':'Platt','isotonic':'Isotonic'}
