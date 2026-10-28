@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-29",
+  "change": "Clarify pre-logit probability clipping in the S20 prose and Table S44 note",
+  "before": "Same base probabilities, OOF rows and C=1; logits are clipped at 10\u207b\u2076 without further standardisation.",
+  "after": "Same base probabilities, OOF rows and C=1; probabilities are clipped to [10\u207b\u2076, 1 \u2212 10\u207b\u2076] before the logit transform, without further standardisation.",
+  "implementation_evidence": "extended_analyses.py logit_stack uses logit(np.clip(f[BASES].to_numpy(),1e-6,1-1e-6))",
+  "implementation_changed": false,
+  "numerical_outputs_changed": false,
+  "new_predictive_model_fits": 0
+}
